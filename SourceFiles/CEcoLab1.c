@@ -170,7 +170,7 @@ int16_t ECOCALLMETHOD CEcoLab1_gnome_sort(struct IEcoLab1* me, void* arr, size_t
     }
     
     while(i < count) {
-        if ((*comp)(arr + ((i - 1) * size), arr + (i * size)) > 0) {
+        if ((*comp)(arr + ((i - 1) * size), arr + (i * size)) >= 0) {
             i = j;
             j++;
         } else {
