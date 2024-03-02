@@ -215,6 +215,7 @@ int16_t EcoMain(IEcoUnknown* pIUnk) {
     doBenchmarkOnIntArray(pIEcoLab1);
     doBenchmarkOnStringArray(pIEcoLab1, pIMem);
     doBenchmarkOnDoubleArray(pIEcoLab1);
+    doBenchmarkOnIncreasingInt(pIEcoLab1, intComp);
     doBenchmarkOnIncreasingInt(pIEcoLab1, intDescComp);
 
 Release:

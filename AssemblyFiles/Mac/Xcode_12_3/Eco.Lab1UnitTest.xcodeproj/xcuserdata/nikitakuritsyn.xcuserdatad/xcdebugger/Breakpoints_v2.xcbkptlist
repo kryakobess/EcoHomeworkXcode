@@ -420,7 +420,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "CBA410D7-F729-4DD5-9481-5B9DA41E4965"
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../../../UnitTestFiles/SourceFiles/EcoLab1.c"
@@ -430,54 +430,6 @@
             endingLineNumber = "87"
             landmarkName = "doBenchmark(pIEcoLab1, arr, size, count)"
             landmarkType = "9">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "1A82FE58-0345-41C2-9E56-2058CE0D46CC"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "../../../UnitTestFiles/SourceFiles/EcoLab1.c"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "218"
-            endingLineNumber = "218"
-            landmarkName = "EcoMain(pIUnk)"
-            landmarkType = "9">
-            <Locations>
-               <Location
-                  uuid = "1A82FE58-0345-41C2-9E56-2058CE0D46CC - 5490f8b5b212a2cf"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "EcoMain"
-                  moduleName = "Eco.Lab1UnitTest"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/nikitakuritsyn/Documents/Eco.Lab1/UnitTestFiles/SourceFiles/EcoLab1.c"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "212"
-                  endingLineNumber = "212"
-                  offsetFromSymbolStart = "516">
-               </Location>
-               <Location
-                  uuid = "1A82FE58-0345-41C2-9E56-2058CE0D46CC - 5490f8b5b212a2ee"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "EcoMain"
-                  moduleName = "Eco.Lab1UnitTest"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/nikitakuritsyn/Documents/Eco.Lab1/UnitTestFiles/SourceFiles/EcoLab1.c"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "211"
-                  endingLineNumber = "211"
-                  offsetFromSymbolStart = "516">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -500,7 +452,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "94AAFCA5-9DC2-45DC-BEFD-7D3A37C43969"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../../../UnitTestFiles/SourceFiles/EcoLab1.c"
@@ -509,6 +461,22 @@
             startingLineNumber = "85"
             endingLineNumber = "85"
             landmarkName = "doBenchmark(pIEcoLab1, arr, size, count)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EDF415F5-1193-43E5-9ABA-72D0502F6667"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../../UnitTestFiles/SourceFiles/EcoLab1.c"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "107"
+            endingLineNumber = "107"
+            landmarkName = "doBenchmarkOnIntArray(pIEcoLab1)"
             landmarkType = "9">
          </BreakpointContent>
       </BreakpointProxy>

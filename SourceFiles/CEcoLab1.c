@@ -121,7 +121,7 @@ void swap(void* el1, void* el2, size_t size) {
     }
 }
 
-int16_t ECOCALLMETHOD CEcoLab1_gnome_sort(struct IEcoLab1* me, void* arr, size_t count, size_t size, int (*comp)(const void*, const void*)) {
+int16_t ECOCALLMETHOD CEcoLab1_gnome_sort_opt(struct IEcoLab1* me, void* arr, size_t count, size_t size, int (*comp)(const void*, const void*)) {
     CEcoLab1* pCMe = (CEcoLab1*)me;
     size_t i = 1;
     size_t j = 2;
@@ -150,6 +150,33 @@ int16_t ECOCALLMETHOD CEcoLab1_gnome_sort(struct IEcoLab1* me, void* arr, size_t
     
     return 0;
 }
+
+int16_t ECOCALLMETHOD CEcoLab1_gnome_sort(struct IEcoLab1* me, void* arr, size_t count, size_t size, int (*comp)(const void*, const void*)) {
+    CEcoLab1* pCMe = (CEcoLab1*)me;
+    size_t i = 0;
+    
+    if (arr == 0 || comp == 0 || size == 0) {
+        return -1;
+    }
+    
+    if (count <= 1) {
+        return 0;
+    }
+    
+    while(i < count) {
+        if (i == 0) {
+            i++;
+        }
+        if ((*comp)(arr + ((i - 1) * size), arr + (i * size)) >= 0) {
+            i++;
+        } else {
+            swap(arr + ((i - 1) * size), arr + (i * size), size);
+            i--;
+        }
+    }
+    return 0;
+}
+
 
 
 /*
@@ -200,7 +227,8 @@ IEcoLab1VTbl g_x277FC00C35624096AFCFC125B94EEC90VTbl = {
     CEcoLab1_QueryInterface,
     CEcoLab1_AddRef,
     CEcoLab1_Release,
-    CEcoLab1_gnome_sort
+    CEcoLab1_gnome_sort,
+    CEcoLab1_gnome_sort_opt
 };
 
 

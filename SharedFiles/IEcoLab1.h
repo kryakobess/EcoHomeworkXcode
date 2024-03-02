@@ -39,6 +39,7 @@ typedef struct IEcoLab1VTbl {
     uint32_t (ECOCALLMETHOD *Release)(/* in */ struct IEcoLab1* me);
     /* IEcoLab1 */
     int16_t (ECOCALLMETHOD *gnome_sort)(struct IEcoLab1* me, void* arr, size_t count, size_t size, int (*comp)(const void *, const void*));
+    int16_t (ECOCALLMETHOD *gnome_sort_opt)(struct IEcoLab1* me, void* arr, size_t count, size_t size, int (*comp)(const void*, const void*));
 
 } IEcoLab1VTbl, *IEcoLab1VTblPtr;
 
