@@ -76,19 +76,31 @@ void printArr(int* arr, size_t count) {
     printf("\n");
 }
 
+double getCurrentTime(void) {
+    return (double)(clock()) * 1000 / (CLOCKS_PER_SEC);
+}
+
 void doBenchmark(IEcoLab1* pIEcoLab1, void* arr, size_t size, size_t count, int (*comp)(const void *, const void*)) {
-    double start = (double)(clock()) * 1000 / (CLOCKS_PER_SEC);
-    //pIEcoLab1->pVTbl->gnome_sort(pIEcoLab1, arr, count, size, comp);
+    double start, end, diff;
+    
+    start = getCurrentTime();
+    pIEcoLab1->pVTbl->gnome_sort(pIEcoLab1, arr, count, size, comp);
+    end = getCurrentTime();
+    diff = end - start;
+    printf("GnomeSort: count: %zu; ms: %f\n", count, diff);
+    
+    start = getCurrentTime();
     qsort(arr, size, count, comp);
-    double end = (double)(clock()) * 1000 / (CLOCKS_PER_SEC);
-    double diff = end - start;
-    printf("%f\n", diff);
+    end = getCurrentTime();
+    diff = end - start;
+    printf("Qsort: count: %zu; ms: %f\n", count, diff);
 }
 
 void doBenchmarkOnIntArray(IEcoLab1* pIEcoLab1) {
+    srand(time(NULL));
+    printf("Start benchmarking on random integer arrays\n");
     for (size_t count = 1e3; count <= 2e4; count+=1e3) {
         int arr[count];
-        srand(1000);
         for (size_t i = 0; i < count; ++i) {
             arr[i] = rand();
         }
@@ -97,9 +109,10 @@ void doBenchmarkOnIntArray(IEcoLab1* pIEcoLab1) {
 }
 
 void doBenchmarkOnStringArray(IEcoLab1* pIEcoLab1, IEcoMemoryAllocator1* pIMem) {
+    srand(time(NULL));
+    printf("Start benchmarking on random char* arrays\n");
     for (size_t count = 1e3; count <= 2e4; count+=1e3) {
         char* arr[count];
-        srand(time(NULL));
         for (size_t i = 0; i < count; ++i) {
             char* line = pIMem->pVTbl->Alloc(pIMem, STRING_MAX_SIZE);
             arr[i] = rand_string(line, STRING_MAX_SIZE);
@@ -115,9 +128,10 @@ void doBenchmarkOnDoubleArray(IEcoLab1* pIEcoLab1) {
     double maxRange = 100.0; double minRange = -100.0;
     double range = maxRange - minRange;
     double div = RAND_MAX / range;
+    printf("Start benchmarking on random double arrays\n");
+    srand(time(NULL));
     for (size_t count = 2e3; count <= 2e4; count+=1e3) {
         double arr[count];
-        srand(time(NULL));
         for (size_t i = 0; i < count; ++i) {
             arr[i] = minRange + (rand() / div);
         }
@@ -126,9 +140,9 @@ void doBenchmarkOnDoubleArray(IEcoLab1* pIEcoLab1) {
 }
 
 void doBenchmarkOnIncreasingInt(IEcoLab1* pIEcoLab1, int (*comp)(const void *, const void*)) {
+    printf("Start benchmarking on increasing integer arrays\n");
     for (size_t count = 1e3; count <= 2e4; count += 1e3) {
         int arr[count];
-
         for (size_t i = 0; i < count; ++i) {
             arr[i] = i;
         }
@@ -155,8 +169,7 @@ int16_t EcoMain(IEcoUnknown* pIUnk) {
     IEcoInterfaceBus1* pIBus = 0;
     /* Указатель на интерфейс работы с памятью */
     IEcoMemoryAllocator1* pIMem = 0;
-    //char* arr[ARRAY_SIZE] = {"qqqq", "bbbb", "gggg", "dddd", "aaaa", "eeee", "uuuu", "zzzz"};
-    int arr[ARRAY_SIZE] = {1, 5,9, 2, 7, 8,1, 4};
+
     /* Указатель на тестируемый интерфейс */
     IEcoLab1* pIEcoLab1 = 0;
 
@@ -192,13 +205,6 @@ int16_t EcoMain(IEcoUnknown* pIUnk) {
         goto Release;
     }
 
-    /* Выделение блока памяти */
-    //name = (char_t *)pIMem->pVTbl->Alloc(pIMem, 10);
-
-    /* Заполнение блока памяти */
-    //pIMem->pVTbl->Fill(pIMem, name, 'a', 9);
-
-
     /* Получение тестируемого интерфейса */
     result = pIBus->pVTbl->QueryComponent(pIBus, &CID_EcoLab1, 0, &IID_IEcoLab1, (void**) &pIEcoLab1);
     if (result != 0 || pIEcoLab1 == 0) {
@@ -206,17 +212,10 @@ int16_t EcoMain(IEcoUnknown* pIUnk) {
         goto Release;
     }
     
-    //doBenchmarkOnIntArray(pIEcoLab1);
-    //doBenchmarkOnStringArray(pIEcoLab1, pIMem);
-    //doBenchmarkOnDoubleArray(pIEcoLab1);
-    doBenchmarkOnIncreasingInt(pIEcoLab1, intComp);
-    //result = pIEcoLab1->pVTbl->gnome_sort(pIEcoLab1, arr, ARRAY_SIZE, sizeof(arr[0]), intComp);
-    //for (int i = 0; i < ARRAY_SIZE; ++i) {
-    //    printf("%s ", arr[i]);
-    //}
-    //printArr(arr, ARRAY_SIZE);
-    /* Освлбождение блока памяти */
-    //pIMem->pVTbl->Free(pIMem, name);
+    doBenchmarkOnIntArray(pIEcoLab1);
+    doBenchmarkOnStringArray(pIEcoLab1, pIMem);
+    doBenchmarkOnDoubleArray(pIEcoLab1);
+    doBenchmarkOnIncreasingInt(pIEcoLab1, intDescComp);
 
 Release:
 

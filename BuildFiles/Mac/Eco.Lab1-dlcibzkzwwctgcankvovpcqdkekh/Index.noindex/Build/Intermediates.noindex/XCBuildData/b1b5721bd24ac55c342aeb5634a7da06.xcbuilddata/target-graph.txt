@@ -1,0 +1,3 @@
+Target dependency graph (2 targets)
+Target 'Dynamic' in project 'Eco.Lab1' (no dependencies)
+Target 'Static' in project 'Eco.Lab1' (no dependencies)

@@ -37,9 +37,6 @@ typedef struct IEcoLab1VTbl {
     int16_t (ECOCALLMETHOD *QueryInterface)(/* in */ struct IEcoLab1* me, /* in */ const UGUID* riid, /* out */ void **ppv);
     uint32_t (ECOCALLMETHOD *AddRef)(/* in */ struct IEcoLab1* me);
     uint32_t (ECOCALLMETHOD *Release)(/* in */ struct IEcoLab1* me);
-
-    /* Delete */
-    int16_t (ECOCALLMETHOD *MyFunction)(/* in */ struct IEcoLab1* me, /* in */ char_t* Name, /* out */ char_t** CopyName);
     /* IEcoLab1 */
     int16_t (ECOCALLMETHOD *gnome_sort)(struct IEcoLab1* me, void* arr, size_t count, size_t size, int (*comp)(const void *, const void*));
 

@@ -109,41 +109,6 @@ uint32_t ECOCALLMETHOD CEcoLab1_Release(/* in */ struct IEcoLab1* me) {
     return pCMe->m_cRef;
 }
 
-/*
- *
- * <сводка>
- *   Функция MyFunction
- * </сводка>
- *
- * <описание>
- *   Функция
- * </описание>
- *
- */
-int16_t ECOCALLMETHOD CEcoLab1_MyFunction(/* in */ struct IEcoLab1* me, /* in */ char_t* Name, /* out */ char_t** copyName) {
-    CEcoLab1* pCMe = (CEcoLab1*)me;
-    int16_t index = 0;
-
-    /* Проверка указателей */
-    if (me == 0 || Name == 0 || copyName == 0) {
-        return -1;
-    }
-
-    /* Копирование строки */
-    while(Name[index] != 0) {
-        index++;
-    }
-    pCMe->m_Name = (char_t*)pCMe->m_pIMem->pVTbl->Alloc(pCMe->m_pIMem, index + 1);
-    index = 0;
-    while(Name[index] != 0) {
-        pCMe->m_Name[index] = Name[index];
-        index++;
-    }
-    *copyName = pCMe->m_Name;
-
-    return 0;
-}
-
 void swap(void* el1, void* el2, size_t size) {
     char buffer[size];
     char* p_el1 = (char*) el1;
@@ -235,7 +200,6 @@ IEcoLab1VTbl g_x277FC00C35624096AFCFC125B94EEC90VTbl = {
     CEcoLab1_QueryInterface,
     CEcoLab1_AddRef,
     CEcoLab1_Release,
-    CEcoLab1_MyFunction,
     CEcoLab1_gnome_sort
 };
 

@@ -1,0 +1,63 @@
+{
+  "buildCommand" : {
+    "command" : "prepareForIndexing",
+    "enableIndexBuildArena" : true,
+    "targets" : null
+  },
+  "configuredTargets" : [
+    {
+      "guid" : "463a901afdfa34a4aebd3b3db93bb12ff80e112ef09482526107d37c97059211"
+    },
+    {
+      "guid" : "463a901afdfa34a4aebd3b3db93bb12f62d3d4cca79c3a0ac5442844d8627d3a"
+    }
+  ],
+  "containerPath" : "/Users/nikitakuritsyn/Documents/Eco.Lab1/AssemblyFiles/Mac/Xcode_12_3/Eco.Lab1.xcodeproj",
+  "continueBuildingAfterErrors" : true,
+  "enableIndexBuildArena" : false,
+  "hideShellScriptEnvironment" : false,
+  "parameters" : {
+    "action" : "indexbuild",
+    "activeArchitecture" : "arm64",
+    "activeRunDestination" : {
+      "disableOnlyActiveArch" : false,
+      "platform" : "macosx",
+      "sdk" : "macosx14.2",
+      "sdkVariant" : "macos",
+      "supportedArchitectures" : [
+        "arm64e",
+        "arm64",
+        "x86_64"
+      ],
+      "targetArchitecture" : "arm64"
+    },
+    "arenaInfo" : {
+      "buildIntermediatesPath" : "/Users/nikitakuritsyn/Documents/Eco.Lab1/BuildFiles/Mac/Eco.Lab1-dlcibzkzwwctgcankvovpcqdkekh/Index.noindex/Build/Intermediates.noindex",
+      "buildProductsPath" : "/Users/nikitakuritsyn/Documents/Eco.Lab1/BuildFiles/Mac/Eco.Lab1-dlcibzkzwwctgcankvovpcqdkekh/Index.noindex/Build/Products",
+      "derivedDataPath" : "/Users/nikitakuritsyn/Documents/Eco.Lab1/BuildFiles/Mac",
+      "indexDataStoreFolderPath" : "/Users/nikitakuritsyn/Documents/Eco.Lab1/BuildFiles/Mac/Eco.Lab1-dlcibzkzwwctgcankvovpcqdkekh/Index.noindex/DataStore",
+      "indexEnableDataStore" : true,
+      "indexPCHPath" : "/Users/nikitakuritsyn/Documents/Eco.Lab1/BuildFiles/Mac/Eco.Lab1-dlcibzkzwwctgcankvovpcqdkekh/Index.noindex/PrecompiledHeaders",
+      "indexRegularBuildIntermediatesPath" : "/Users/nikitakuritsyn/Documents/Eco.Lab1/AssemblyFiles/Mac/Xcode_12_3/Build/Intermediates.noindex",
+      "indexRegularBuildProductsPath" : "/Users/nikitakuritsyn/Documents/Eco.Lab1/BuildFiles/Mac/$(ARCHS_STANDARD)",
+      "pchPath" : "/Users/nikitakuritsyn/Documents/Eco.Lab1/BuildFiles/Mac/Eco.Lab1-dlcibzkzwwctgcankvovpcqdkekh/Index.noindex/Build/Intermediates.noindex/PrecompiledHeaders"
+    },
+    "configurationName" : "Debug",
+    "overrides" : {
+      "synthesized" : {
+        "table" : {
+          "ENABLE_PREVIEWS" : "NO",
+          "ENABLE_XOJIT_PREVIEWS" : "NO",
+          "ONLY_ACTIVE_ARCH" : "YES"
+        }
+      }
+    }
+  },
+  "qos" : "utility",
+  "schemeCommand" : "launch",
+  "showNonLoggedProgress" : true,
+  "useDryRun" : false,
+  "useImplicitDependencies" : true,
+  "useLegacyBuildLocations" : false,
+  "useParallelTargets" : true
+}
