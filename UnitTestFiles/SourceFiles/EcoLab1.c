@@ -90,6 +90,12 @@ void doBenchmark(IEcoLab1* pIEcoLab1, void* arr, size_t size, size_t count, int 
     printf("GnomeSort: count: %zu; ms: %f\n", count, diff);
     
     start = getCurrentTime();
+    pIEcoLab1->pVTbl->gnome_sort_opt(pIEcoLab1, arr, count, size, comp);
+    end = getCurrentTime();
+    diff = end - start;
+    printf("GnomeSort with optimization: count: %zu; ms: %f\n", count, diff);
+    
+    start = getCurrentTime();
     qsort(arr, size, count, comp);
     end = getCurrentTime();
     diff = end - start;
