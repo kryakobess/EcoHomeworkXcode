@@ -57,6 +57,7 @@
 				01138AD327F1BDF100734060 /* Shared Files */,
 				01138AD227F1BDE700734060 /* Source Files */,
 				01138AC127F1BDA600734060 /* Products */,
+				FD56C89E2BA971E300F54A5B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -94,6 +95,13 @@
 				01138AD527F1BE1A00734060 /* CEcoLab1Factory.h */,
 			);
 			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		FD56C89E2BA971E300F54A5B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -366,6 +374,11 @@
 					"$(ECO_FRAMEWORK)/Eco.MemoryManager1/SharedFiles",
 					"$(ECO_FRAMEWORK)/Eco.Core1/SharedFiles",
 					"$(ECO_FRAMEWORK)/Eco.InterfaceBus1/SharedFiles",
+					/Users/nikitakuritsyn/Documents/EcoHW/001.InsideACOM/Lessons/Lesson02/Eco.CalculatorA/SharedFiles,
+					/Users/nikitakuritsyn/Documents/EcoHW/001.InsideACOM/Lessons/Lesson03/Eco.CalculatorB/SharedFiles,
+					/Users/nikitakuritsyn/Documents/EcoHW/001.InsideACOM/Lessons/Lesson05/Eco.CalculatorC/SharedFiles,
+					/Users/nikitakuritsyn/Documents/EcoHW/001.InsideACOM/Lessons/Lesson06/Eco.CalculatorD/SharedFiles,
+					/Users/nikitakuritsyn/Documents/EcoHW/001.InsideACOM/Lessons/Lesson07/Eco.CalculatorE/SharedFiles,
 				);
 				PRODUCT_NAME = "$(PRODUCT_NAME)";
 				SKIP_INSTALL = YES;
@@ -391,6 +404,11 @@
 					"$(ECO_FRAMEWORK)/Eco.MemoryManager1/SharedFiles",
 					"$(ECO_FRAMEWORK)/Eco.Core1/SharedFiles",
 					"$(ECO_FRAMEWORK)/Eco.InterfaceBus1/SharedFiles",
+					/Users/nikitakuritsyn/Documents/EcoHW/001.InsideACOM/Lessons/Lesson02/Eco.CalculatorA/SharedFiles,
+					/Users/nikitakuritsyn/Documents/EcoHW/001.InsideACOM/Lessons/Lesson03/Eco.CalculatorB/SharedFiles,
+					/Users/nikitakuritsyn/Documents/EcoHW/001.InsideACOM/Lessons/Lesson05/Eco.CalculatorC/SharedFiles,
+					/Users/nikitakuritsyn/Documents/EcoHW/001.InsideACOM/Lessons/Lesson06/Eco.CalculatorD/SharedFiles,
+					/Users/nikitakuritsyn/Documents/EcoHW/001.InsideACOM/Lessons/Lesson07/Eco.CalculatorE/SharedFiles,
 				);
 				PRODUCT_NAME = "$(PRODUCT_NAME)";
 				SKIP_INSTALL = YES;

@@ -1,4 +1,4 @@
-﻿/*
+/*
  * <кодировка символов>
  *   Cyrillic (UTF-8 with signature) - Codepage 65001
  * </кодировка символов>
@@ -23,6 +23,8 @@
 #include "IEcoLab1.h"
 #include "IEcoSystem1.h"
 #include "IdEcoMemoryManager1.h"
+#include "IEcoCalculatorX.h"
+#include "IEcoCalculatorY.h"
 
 typedef struct CEcoLab1 {
 
@@ -38,6 +40,25 @@ typedef struct CEcoLab1 {
 
     /* Системный интерфейс */
     IEcoSystem1* m_pISys;
+
+    
+    /* Указатель на интерфейс IEcoCalculatorX включаемого компонента EcoCalculatorB */
+    IEcoCalculatorX* m_pIXCalculatorB;
+    
+    /* Указатель на интерфейс IEcoCalculatorX включаемого компонента EcoCalculatorC */
+    IEcoCalculatorX* m_pIXCalculatorC;
+    
+    /* Указатель на интерфейс IEcoCalculatorY включаемого компонента EcoCalculatorD */
+    IEcoCalculatorY* m_pIYCalculatorD;
+    
+    /* Указатель на интерфейс IEcoCalculatorY включаемого компонента EcoCalculatorE */
+    IEcoCalculatorY* m_pIYCalculatorE;
+    
+    /* Указатель на IEcoUnknown внутреннего компонента EcoCalculatorA*/
+    IEcoUnknown* m_pInnerUnknownA;
+    
+    /* Указатель на IEcoUnknown внутреннего компонента EcoCalculatorE*/
+    IEcoUnknown* m_pInnerUnknownE;
 
     /* Данные экземпляра */
     char_t* m_Name;

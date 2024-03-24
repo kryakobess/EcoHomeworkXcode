@@ -24,6 +24,13 @@
 #include "IdEcoInterfaceBus1.h"
 #include "IdEcoFileSystemManagement1.h"
 #include "IdEcoLab1.h"
+#include "IEcoCalculatorX.h"
+#include "IEcoCalculatorY.h"
+#include "IdEcoCalculatorA.h"
+#include "IdEcoCalculatorB.h"
+#include "IdEcoCalculatorC.h"
+#include "IdEcoCalculatorD.h"
+#include "IdEcoCalculatorE.h"
 
 #define ARRAY_SIZE 8
 #define STRING_MAX_SIZE 10
@@ -178,6 +185,7 @@ int16_t EcoMain(IEcoUnknown* pIUnk) {
 
     /* Указатель на тестируемый интерфейс */
     IEcoLab1* pIEcoLab1 = 0;
+    IEcoCalculatorY* pIEcoCalculatorY = 0;
 
     /* Проверка и создание системного интрефейса */
     if (pISys == 0) {
@@ -213,16 +221,24 @@ int16_t EcoMain(IEcoUnknown* pIUnk) {
 
     /* Получение тестируемого интерфейса */
     result = pIBus->pVTbl->QueryComponent(pIBus, &CID_EcoLab1, 0, &IID_IEcoLab1, (void**) &pIEcoLab1);
+    
+    result = pIBus->pVTbl->QueryComponent(pIBus, &CID_EcoLab1, 0, &IID_IEcoCalculatorY, (void**) &pIEcoCalculatorY);
+    
+    //Получаю компонент EcoCalculatorB по интерфейсу IEcoCalculatorX
+    //result = pIEcoLab1->pVTbl->QueryInterface(pIEcoLab1, &IID_IEcoCalculatorY, (void**) &pIEcoCalculatorX);
+    
+    
+    
     if (result != 0 || pIEcoLab1 == 0) {
         /* Освобождение интерфейсов в случае ошибки */
         goto Release;
     }
+    //doBenchmarkOnIntArray(pIEcoLab1);
+
     
-    doBenchmarkOnIntArray(pIEcoLab1);
-    doBenchmarkOnStringArray(pIEcoLab1, pIMem);
-    doBenchmarkOnDoubleArray(pIEcoLab1);
-    doBenchmarkOnIncreasingInt(pIEcoLab1, intComp);
-    doBenchmarkOnIncreasingInt(pIEcoLab1, intDescComp);
+    result = pIEcoLab1->pVTbl->Division(pIEcoLab1, 8, 4);
+    printf("%d\n", result);
+    
 
 Release:
 

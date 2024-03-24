@@ -10,4 +10,6 @@ dependencies: \
   /Users/nikitakuritsyn/Documents/EcoHW/Eco.Framework/Eco.MemoryManager1/SharedFiles/IdEcoMemoryManager1.h \
   /Users/nikitakuritsyn/Documents/EcoHW/Eco.Framework/Eco.MemoryManager1/SharedFiles/IEcoMemoryManager1.h \
   /Users/nikitakuritsyn/Documents/EcoHW/Eco.Framework/Eco.MemoryManager1/SharedFiles/IEcoMemoryAllocator1.h \
+  /Users/nikitakuritsyn/Documents/EcoHW/001.InsideACOM/Lessons/Lesson02/Eco.CalculatorA/SharedFiles/IEcoCalculatorX.h \
+  /Users/nikitakuritsyn/Documents/EcoHW/001.InsideACOM/Lessons/Lesson05/Eco.CalculatorC/SharedFiles/IEcoCalculatorY.h \
   /Users/nikitakuritsyn/Documents/Eco.Lab1/HeaderFiles/CEcoLab1Factory.h

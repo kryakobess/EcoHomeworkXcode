@@ -7,6 +7,17 @@ dependencies: \
   /Users/nikitakuritsyn/Documents/EcoHW/Eco.Framework/Eco.Core1/SharedFiles/atomic.h \
   /Users/nikitakuritsyn/Documents/EcoHW/Eco.Framework/Eco.InterfaceBus1/SharedFiles/IEcoInterfaceBus1.h \
   /Users/nikitakuritsyn/Documents/EcoHW/Eco.Framework/Eco.InterfaceBus1/SharedFiles/IEcoInterfaceBus1MemExt.h \
+  /Users/nikitakuritsyn/Documents/EcoHW/001.InsideACOM/Lessons/Lesson02/Eco.CalculatorA/SharedFiles/IdEcoCalculatorA.h \
+  /Users/nikitakuritsyn/Documents/EcoHW/001.InsideACOM/Lessons/Lesson02/Eco.CalculatorA/SharedFiles/IEcoCalculatorX.h \
+  /Users/nikitakuritsyn/Documents/EcoHW/001.InsideACOM/Lessons/Lesson03/Eco.CalculatorB/SharedFiles/IdEcoCalculatorB.h \
+  /Users/nikitakuritsyn/Documents/EcoHW/001.InsideACOM/Lessons/Lesson03/Eco.CalculatorB/SharedFiles/IEcoCalculatorX.h \
+  /Users/nikitakuritsyn/Documents/EcoHW/001.InsideACOM/Lessons/Lesson05/Eco.CalculatorC/SharedFiles/IdEcoCalculatorC.h \
+  /Users/nikitakuritsyn/Documents/EcoHW/001.InsideACOM/Lessons/Lesson05/Eco.CalculatorC/SharedFiles/IEcoCalculatorX.h \
+  /Users/nikitakuritsyn/Documents/EcoHW/001.InsideACOM/Lessons/Lesson05/Eco.CalculatorC/SharedFiles/IEcoCalculatorY.h \
+  /Users/nikitakuritsyn/Documents/EcoHW/001.InsideACOM/Lessons/Lesson06/Eco.CalculatorD/SharedFiles/IdEcoCalculatorD.h \
+  /Users/nikitakuritsyn/Documents/EcoHW/001.InsideACOM/Lessons/Lesson06/Eco.CalculatorD/SharedFiles/IEcoCalculatorY.h \
+  /Users/nikitakuritsyn/Documents/EcoHW/001.InsideACOM/Lessons/Lesson07/Eco.CalculatorE/SharedFiles/IdEcoCalculatorE.h \
+  /Users/nikitakuritsyn/Documents/EcoHW/001.InsideACOM/Lessons/Lesson07/Eco.CalculatorE/SharedFiles/IEcoCalculatorY.h \
   /Users/nikitakuritsyn/Documents/Eco.Lab1/HeaderFiles/CEcoLab1.h \
   /Users/nikitakuritsyn/Documents/Eco.Lab1/SharedFiles/IEcoLab1.h \
   /Users/nikitakuritsyn/Documents/EcoHW/Eco.Framework/Eco.MemoryManager1/SharedFiles/IdEcoMemoryManager1.h \

@@ -16,6 +16,10 @@
 		FD336EE42B837FB30058E12A /* lib0000000000000000000000004D656D31.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FD336EE32B837FB30058E12A /* lib0000000000000000000000004D656D31.a */; };
 		FD336EE52B83B01A0058E12A /* lib0000000000000000000000004D656D31.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 01C7122427F211EF00AE9906 /* lib0000000000000000000000004D656D31.a */; };
 		FD336EEB2B846B7D0058E12A /* lib1F5DF16EE1BF43B999A434ED38FE8F3A.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FD336EEA2B846B7D0058E12A /* lib1F5DF16EE1BF43B999A434ED38FE8F3A.a */; };
+		FD56C8B02BAD982800F54A5B /* lib3A8E44677E82475CB4A3719ED8397E61.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FD56C8AF2BAD982800F54A5B /* lib3A8E44677E82475CB4A3719ED8397E61.a */; };
+		FD56C8B22BAD984900F54A5B /* lib872FEF1DE3314B87AD44D1E7C232C2F0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FD56C8B12BAD984900F54A5B /* lib872FEF1DE3314B87AD44D1E7C232C2F0.a */; };
+		FD56C8B72BADA59D00F54A5B /* lib4828F6552E4540E78121EBD220DC360E.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FD56C8A92BAD97B000F54A5B /* lib4828F6552E4540E78121EBD220DC360E.a */; };
+		FD56C8B82BADA5C300F54A5B /* libAE202E543CE54550899603BD70C62565.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FD56C8AB2BAD97D900F54A5B /* libAE202E543CE54550899603BD70C62565.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -43,6 +47,13 @@
 		FD336EE32B837FB30058E12A /* lib0000000000000000000000004D656D31.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = lib0000000000000000000000004D656D31.a; path = "../../../../EcoHW/Eco.Framework/Eco.MemoryManager1/BuildFiles/Mac/arm64 x86_64/StaticRelease/lib0000000000000000000000004D656D31.a"; sourceTree = "<group>"; };
 		FD336EE82B83B46E0058E12A /* lib1F5DF16EE1BF43B999A434ED38FE8F3A.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = lib1F5DF16EE1BF43B999A434ED38FE8F3A.a; path = ../../../../EcoHW/Eco.Lab1/BuildFiles/Linux/x64/StaticDebug/lib1F5DF16EE1BF43B999A434ED38FE8F3A.a; sourceTree = "<group>"; };
 		FD336EEA2B846B7D0058E12A /* lib1F5DF16EE1BF43B999A434ED38FE8F3A.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = lib1F5DF16EE1BF43B999A434ED38FE8F3A.a; path = "../../../BuildFiles/Mac/arm64 x86_64/Debug/lib1F5DF16EE1BF43B999A434ED38FE8F3A.a"; sourceTree = "<group>"; };
+		FD56C8A92BAD97B000F54A5B /* lib4828F6552E4540E78121EBD220DC360E.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = lib4828F6552E4540E78121EBD220DC360E.a; path = "../../../../EcoHW/001.InsideACOM/Lessons/Lesson02/Eco.CalculatorA/BuildFiles/Mac/arm64 x86_64/StaticRelease/lib4828F6552E4540E78121EBD220DC360E.a"; sourceTree = "<group>"; };
+		FD56C8AB2BAD97D900F54A5B /* libAE202E543CE54550899603BD70C62565.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAE202E543CE54550899603BD70C62565.a; path = "../../../../EcoHW/001.InsideACOM/Lessons/Lesson03/Eco.CalculatorB/BuildFiles/Mac/arm64 x86_64/StaticRelease/libAE202E543CE54550899603BD70C62565.a"; sourceTree = "<group>"; };
+		FD56C8AD2BAD97F700F54A5B /* lib4828F6552E4540E78121EBD220DC360E.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = lib4828F6552E4540E78121EBD220DC360E.a; path = "../../../../EcoHW/001.InsideACOM/Lessons/Lesson05/Eco.CalculatorC/BuildFiles/Mac/arm64 x86_64/StaticRelease/lib4828F6552E4540E78121EBD220DC360E.a"; sourceTree = "<group>"; };
+		FD56C8AF2BAD982800F54A5B /* lib3A8E44677E82475CB4A3719ED8397E61.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = lib3A8E44677E82475CB4A3719ED8397E61.a; path = "../../../../EcoHW/001.InsideACOM/Lessons/Lesson06/Eco.CalculatorD/BuildFiles/Mac/arm64 x86_64/StaticRelease/lib3A8E44677E82475CB4A3719ED8397E61.a"; sourceTree = "<group>"; };
+		FD56C8B12BAD984900F54A5B /* lib872FEF1DE3314B87AD44D1E7C232C2F0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = lib872FEF1DE3314B87AD44D1E7C232C2F0.a; path = "../../../../EcoHW/001.InsideACOM/Lessons/Lesson07/Eco.CalculatorE/BuildFiles/Mac/arm64 x86_64/StaticRelease/lib872FEF1DE3314B87AD44D1E7C232C2F0.a"; sourceTree = "<group>"; };
+		FD56C8B32BADA32B00F54A5B /* 4828F6552E4540E78121EBD220DC360E.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = 4828F6552E4540E78121EBD220DC360E.dylib; path = "../../../../EcoHW/001.InsideACOM/Lessons/Lesson02/Eco.CalculatorA/BuildFiles/Mac/arm64 x86_64/DynamicDebug/4828F6552E4540E78121EBD220DC360E.dylib"; sourceTree = "<group>"; };
+		FD56C8B52BADA35000F54A5B /* AE202E543CE54550899603BD70C62565.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = AE202E543CE54550899603BD70C62565.dylib; path = "../../../../EcoHW/001.InsideACOM/Lessons/Lesson03/Eco.CalculatorB/BuildFiles/Mac/arm64 x86_64/StaticDebug/AE202E543CE54550899603BD70C62565.dylib"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +61,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD56C8B82BADA5C300F54A5B /* libAE202E543CE54550899603BD70C62565.a in Frameworks */,
+				FD56C8B72BADA59D00F54A5B /* lib4828F6552E4540E78121EBD220DC360E.a in Frameworks */,
+				FD56C8B22BAD984900F54A5B /* lib872FEF1DE3314B87AD44D1E7C232C2F0.a in Frameworks */,
+				FD56C8B02BAD982800F54A5B /* lib3A8E44677E82475CB4A3719ED8397E61.a in Frameworks */,
 				FD336EEB2B846B7D0058E12A /* lib1F5DF16EE1BF43B999A434ED38FE8F3A.a in Frameworks */,
 				FD336EE42B837FB30058E12A /* lib0000000000000000000000004D656D31.a in Frameworks */,
 				01C7122127F211C900AE9906 /* lib00000000000000000000000046534D31.a in Frameworks */,
@@ -86,6 +101,13 @@
 		01C7120027F20DF700AE9906 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FD56C8B52BADA35000F54A5B /* AE202E543CE54550899603BD70C62565.dylib */,
+				FD56C8B32BADA32B00F54A5B /* 4828F6552E4540E78121EBD220DC360E.dylib */,
+				FD56C8B12BAD984900F54A5B /* lib872FEF1DE3314B87AD44D1E7C232C2F0.a */,
+				FD56C8AF2BAD982800F54A5B /* lib3A8E44677E82475CB4A3719ED8397E61.a */,
+				FD56C8AD2BAD97F700F54A5B /* lib4828F6552E4540E78121EBD220DC360E.a */,
+				FD56C8AB2BAD97D900F54A5B /* libAE202E543CE54550899603BD70C62565.a */,
+				FD56C8A92BAD97B000F54A5B /* lib4828F6552E4540E78121EBD220DC360E.a */,
 				FD336EE82B83B46E0058E12A /* lib1F5DF16EE1BF43B999A434ED38FE8F3A.a */,
 				FD336EEA2B846B7D0058E12A /* lib1F5DF16EE1BF43B999A434ED38FE8F3A.a */,
 				FD336EE32B837FB30058E12A /* lib0000000000000000000000004D656D31.a */,
@@ -355,11 +377,16 @@
 					../../../SharedFiles,
 					"$(ECO_FRAMEWORK)/Eco.FileSystemManagement1/SharedFiles",
 					"$(ECO_FRAMEWORK)/Eco.MemoryManager1/SharedFiles",
+					/Users/nikitakuritsyn/Documents/EcoHW/001.InsideACOM/Lessons/Lesson06/Eco.CalculatorD/SharedFiles,
 					"$(ECO_FRAMEWORK)/Eco.Core1/SharedFiles",
 					"$(ECO_FRAMEWORK)/Eco.InterfaceBus1/SharedFiles",
 					"$(ECO_FRAMEWORK)/Eco.List1/SharedFiles",
 					"$(ECO_FRAMEWORK)/Eco.String1/SharedFiles",
 					"$(ECO_FRAMEWORK)/Eco.Log1/SharedFiles",
+					/Users/nikitakuritsyn/Documents/EcoHW/001.InsideACOM/Lessons/Lesson07/Eco.CalculatorE/SharedFiles,
+					/Users/nikitakuritsyn/Documents/EcoHW/001.InsideACOM/Lessons/Lesson02/Eco.CalculatorA/SharedFiles,
+					/Users/nikitakuritsyn/Documents/EcoHW/001.InsideACOM/Lessons/Lesson03/Eco.CalculatorB/SharedFiles,
+					/Users/nikitakuritsyn/Documents/EcoHW/001.InsideACOM/Lessons/Lesson05/Eco.CalculatorC/SharedFiles,
 				);
 				LIBRARY_SEARCH_PATHS = (
 					"../../../BuildFiles/Mac/$(ARCHS_STANDARD)/$(CONFIGURATION)",
@@ -368,6 +395,11 @@
 					"\"/Users/nikitakuritsyn/Documents/EcoHW/Eco.Framework/Eco.MemoryManager1/BuildFiles/Mac/arm64 x86_64/StaticRelease\"",
 					"'/Users/nikitakuritsyn/Documents/EcoHW/Eco.Framework/Eco.FileSystemManagement1/BuildFiles/Mac/arm64 x86_64/StaticRelease'",
 					"\"/Users/nikitakuritsyn/Documents/Eco.Lab1/BuildFiles/Mac/arm64 x86_64/Debug\"",
+					"\"/Users/nikitakuritsyn/Documents/EcoHW/001.InsideACOM/Lessons/Lesson02/Eco.CalculatorA/BuildFiles/Mac/arm64 x86_64/DynamicDebug\"",
+					"\"/Users/nikitakuritsyn/Documents/EcoHW/001.InsideACOM/Lessons/Lesson03/Eco.CalculatorB/BuildFiles/Mac/arm64 x86_64/StaticDebug\"",
+					"'/Users/nikitakuritsyn/Documents/EcoHW/001.InsideACOM/Lessons/Lesson05/Eco.CalculatorC/BuildFiles/Mac/arm64 x86_64/StaticRelease'",
+					"'/Users/nikitakuritsyn/Documents/EcoHW/001.InsideACOM/Lessons/Lesson06/Eco.CalculatorD/BuildFiles/Mac/arm64 x86_64/StaticRelease'",
+					"'/Users/nikitakuritsyn/Documents/EcoHW/001.InsideACOM/Lessons/Lesson07/Eco.CalculatorE/BuildFiles/Mac/arm64 x86_64/StaticRelease'",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -385,11 +417,16 @@
 					../../../SharedFiles,
 					"$(ECO_FRAMEWORK)/Eco.FileSystemManagement1/SharedFiles",
 					"$(ECO_FRAMEWORK)/Eco.MemoryManager1/SharedFiles",
+					/Users/nikitakuritsyn/Documents/EcoHW/001.InsideACOM/Lessons/Lesson06/Eco.CalculatorD/SharedFiles,
 					"$(ECO_FRAMEWORK)/Eco.Core1/SharedFiles",
 					"$(ECO_FRAMEWORK)/Eco.InterfaceBus1/SharedFiles",
 					"$(ECO_FRAMEWORK)/Eco.List1/SharedFiles",
 					"$(ECO_FRAMEWORK)/Eco.String1/SharedFiles",
 					"$(ECO_FRAMEWORK)/Eco.Log1/SharedFiles",
+					/Users/nikitakuritsyn/Documents/EcoHW/001.InsideACOM/Lessons/Lesson07/Eco.CalculatorE/SharedFiles,
+					/Users/nikitakuritsyn/Documents/EcoHW/001.InsideACOM/Lessons/Lesson02/Eco.CalculatorA/SharedFiles,
+					/Users/nikitakuritsyn/Documents/EcoHW/001.InsideACOM/Lessons/Lesson03/Eco.CalculatorB/SharedFiles,
+					/Users/nikitakuritsyn/Documents/EcoHW/001.InsideACOM/Lessons/Lesson05/Eco.CalculatorC/SharedFiles,
 				);
 				LIBRARY_SEARCH_PATHS = (
 					"../../../BuildFiles/Mac/$(ARCHS_STANDARD)/$(CONFIGURATION)",
@@ -398,6 +435,11 @@
 					"\"/Users/nikitakuritsyn/Documents/EcoHW/Eco.Framework/Eco.MemoryManager1/BuildFiles/Mac/arm64 x86_64/StaticRelease\"",
 					"'/Users/nikitakuritsyn/Documents/EcoHW/Eco.Framework/Eco.FileSystemManagement1/BuildFiles/Mac/arm64 x86_64/StaticRelease'",
 					"\"/Users/nikitakuritsyn/Documents/Eco.Lab1/BuildFiles/Mac/arm64 x86_64/Debug\"",
+					"\"/Users/nikitakuritsyn/Documents/EcoHW/001.InsideACOM/Lessons/Lesson02/Eco.CalculatorA/BuildFiles/Mac/arm64 x86_64/DynamicDebug\"",
+					"\"/Users/nikitakuritsyn/Documents/EcoHW/001.InsideACOM/Lessons/Lesson03/Eco.CalculatorB/BuildFiles/Mac/arm64 x86_64/StaticDebug\"",
+					"'/Users/nikitakuritsyn/Documents/EcoHW/001.InsideACOM/Lessons/Lesson05/Eco.CalculatorC/BuildFiles/Mac/arm64 x86_64/StaticRelease'",
+					"'/Users/nikitakuritsyn/Documents/EcoHW/001.InsideACOM/Lessons/Lesson06/Eco.CalculatorD/BuildFiles/Mac/arm64 x86_64/StaticRelease'",
+					"'/Users/nikitakuritsyn/Documents/EcoHW/001.InsideACOM/Lessons/Lesson07/Eco.CalculatorE/BuildFiles/Mac/arm64 x86_64/StaticRelease'",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
