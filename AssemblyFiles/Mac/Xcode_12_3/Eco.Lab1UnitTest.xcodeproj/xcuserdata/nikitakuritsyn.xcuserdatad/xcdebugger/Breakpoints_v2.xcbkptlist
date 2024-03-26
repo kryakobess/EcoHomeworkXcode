@@ -30,8 +30,8 @@
             filePath = "../../../UnitTestFiles/SourceFiles/EcoLab1.c"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "59"
-            endingLineNumber = "59"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
             landmarkName = "EcoMain(pIUnk)"
             landmarkType = "9">
          </BreakpointContent>
@@ -40,7 +40,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "B245DA49-5989-4A00-8735-39C53BB2FA0D"
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../../../UnitTestFiles/SourceFiles/EcoLab1.c"
@@ -50,22 +50,38 @@
             endingLineNumber = "104"
             landmarkName = "EcoMain(pIUnk)"
             landmarkType = "9">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "7B319A00-499F-4D7C-BEC5-BFE8FB86CDB6"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "../../../UnitTestFiles/SourceFiles/EcoLab1.c"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "105"
-            endingLineNumber = "105"
-            landmarkName = "EcoMain(pIUnk)"
-            landmarkType = "9">
+            <Locations>
+               <Location
+                  uuid = "B245DA49-5989-4A00-8735-39C53BB2FA0D - 5490f8b5b2135079"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "EcoMain"
+                  moduleName = "Eco.Lab1UnitTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nikitakuritsyn/Documents/Eco.Lab1/UnitTestFiles/SourceFiles/EcoLab1.c"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "106"
+                  endingLineNumber = "106"
+                  offsetFromSymbolStart = "428">
+               </Location>
+               <Location
+                  uuid = "B245DA49-5989-4A00-8735-39C53BB2FA0D - 5490f8b5b2135098"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "EcoMain"
+                  moduleName = "Eco.Lab1UnitTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nikitakuritsyn/Documents/Eco.Lab1/UnitTestFiles/SourceFiles/EcoLab1.c"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "105"
+                  endingLineNumber = "105"
+                  offsetFromSymbolStart = "428">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -158,8 +174,8 @@
             filePath = "../../../UnitTestFiles/SourceFiles/EcoLab1.c"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "139"
-            endingLineNumber = "139"
+            startingLineNumber = "144"
+            endingLineNumber = "144"
             landmarkName = "EcoMain(pIUnk)"
             landmarkType = "9">
             <Locations>
@@ -413,6 +429,38 @@
             startingLineNumber = "43"
             endingLineNumber = "43"
             landmarkName = "CEcoLab1_QueryInterface(me, riid, ppv)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9045925F-4804-4DDD-8345-63B8FC54B3CC"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../../UnitTestFiles/SourceFiles/EcoLab1.c"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "99"
+            endingLineNumber = "99"
+            landmarkName = "EcoMain(pIUnk)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "36B8F304-2D0C-4C7E-BD59-EDA6FF1B4B2D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../../SourceFiles/CEcoLab1.c"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "276"
+            endingLineNumber = "276"
+            landmarkName = "initCEcoLab1(me, pIUnkSystem)"
             landmarkType = "9">
          </BreakpointContent>
       </BreakpointProxy>

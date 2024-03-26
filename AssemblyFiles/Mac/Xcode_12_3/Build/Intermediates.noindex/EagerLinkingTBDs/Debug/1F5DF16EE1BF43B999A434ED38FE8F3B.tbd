@@ -1,0 +1,60 @@
+{
+  "main_library": {
+    "exported_symbols": [
+      {
+        "data": {
+          "global": [
+            "_g_x1F5DF16EE1BF43B999A434ED38FE8F3BFactoryVTbl",
+            "_g_x277FC00C35624096AFCFC125B94EEC90VTbl",
+            "_g_x1F5DF16EE1BF43B999A434ED38FE8F3BFactory"
+          ]
+        },
+        "text": {
+          "global": [
+            "_CEcoLab2Factory_Alloc",
+            "_CEcoLab2Factory_get_Name",
+            "_CEcoLab2_AddRef",
+            "_deleteCEcoLab2",
+            "_CEcoLab2Factory_AddRef",
+            "_CEcoLab2_gnome_sort_opt",
+            "_createCEcoLab2",
+            "_CEcoLab2Factory_get_Manufacturer",
+            "_CEcoLab2Factory_Release",
+            "_GetIEcoComponentFactoryPtr",
+            "_initCEcoLab2",
+            "_CEcoLab2_Release",
+            "_CEcoLab2Factory_get_Version",
+            "_CEcoLab2_QueryInterface",
+            "_swap",
+            "_CEcoLab2Factory_Init",
+            "_CEcoLab2_gnome_sort",
+            "_CEcoLab2Factory_QueryInterface"
+          ]
+        }
+      }
+    ],
+    "flags": [
+      {
+        "attributes": [
+          "not_app_extension_safe"
+        ]
+      }
+    ],
+    "install_names": [
+      {
+        "name": "/usr/local/lib/1F5DF16EE1BF43B999A434ED38FE8F3B.dylib"
+      }
+    ],
+    "target_info": [
+      {
+        "min_deployment": "10.9",
+        "target": "x86_64-macos"
+      },
+      {
+        "min_deployment": "11",
+        "target": "arm64-macos"
+      }
+    ]
+  },
+  "tapi_tbd_version": 5
+}

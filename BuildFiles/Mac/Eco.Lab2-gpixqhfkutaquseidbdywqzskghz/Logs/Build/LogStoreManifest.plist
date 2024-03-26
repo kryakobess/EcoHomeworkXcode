@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>logFormatVersion</key>
+	<integer>10</integer>
+	<key>logs</key>
+	<dict>
+		<key>C91A2637-8CC1-41BC-A718-EC2D1207C67D</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>C91A2637-8CC1-41BC-A718-EC2D1207C67D.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>74</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Eco.Lab2 project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Dynamic</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Dynamic</string>
+			<key>timeStartedRecording</key>
+			<real>733162335.33599496</real>
+			<key>timeStoppedRecording</key>
+			<real>733162335.50525403</real>
+			<key>title</key>
+			<string>Build Dynamic</string>
+			<key>uniqueIdentifier</key>
+			<string>C91A2637-8CC1-41BC-A718-EC2D1207C67D</string>
+		</dict>
+		<key>DBE3977B-B726-429F-9236-5D3423E7BDD6</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>DBE3977B-B726-429F-9236-5D3423E7BDD6.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>73</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Eco.Lab1 project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Dynamic</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Dynamic</string>
+			<key>timeStartedRecording</key>
+			<real>733161929.34348905</real>
+			<key>timeStoppedRecording</key>
+			<real>733161929.91396296</real>
+			<key>title</key>
+			<string>Build Dynamic</string>
+			<key>uniqueIdentifier</key>
+			<string>DBE3977B-B726-429F-9236-5D3423E7BDD6</string>
+		</dict>
+		<key>F830817C-1F5B-4329-B24A-32789E0BEB5B</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>F830817C-1F5B-4329-B24A-32789E0BEB5B.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>2</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Eco.Lab2 project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Dynamic</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Dynamic</string>
+			<key>timeStartedRecording</key>
+			<real>733162555.492576</real>
+			<key>timeStoppedRecording</key>
+			<real>733162555.68607497</real>
+			<key>title</key>
+			<string>Build Dynamic</string>
+			<key>uniqueIdentifier</key>
+			<string>F830817C-1F5B-4329-B24A-32789E0BEB5B</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

@@ -24,6 +24,9 @@
 #include "IdEcoInterfaceBus1.h"
 #include "IdEcoFileSystemManagement1.h"
 #include "IdEcoLab1.h"
+#include "IdEcoLab2.h"
+#include "IEcoLab1.h"
+#include "IEcoLab2.h"
 #include "IEcoCalculatorX.h"
 #include "IEcoCalculatorY.h"
 #include "IdEcoCalculatorA.h"
@@ -31,17 +34,6 @@
 #include "IdEcoCalculatorC.h"
 #include "IdEcoCalculatorD.h"
 #include "IdEcoCalculatorE.h"
-
-
-IEcoLab1* back(IEcoLab1* pILab1) {
-    /* Вы всегда можете вернуться туда, откуда начали. */
-    IEcoCalculatorX* p_x = 0;
-    IEcoLab1* p_lab1 = 0;
-    if (pILab1->pVTbl->QueryInterface(pILab1, &IID_IEcoCalculatorX, (void**)&p_x) == 0) {
-        p_x->pVTbl->QueryInterface(p_x, &IID_IEcoLab1, (void**)&p_lab1);
-    }
-    return p_lab1;
-}
 
 /*
  *
@@ -67,6 +59,8 @@ int16_t EcoMain(IEcoUnknown* pIUnk) {
     IEcoLab1* pIEcoLab1 = 0;
     IEcoCalculatorX* pIEcoCalculatorX = 0;
     IEcoCalculatorY* pIEcoCalculatorY = 0;
+    IEcoLab2* pIEcoLab2 = 0;
+    IEcoLab1* pILab1 = 0;
     int res = 0;
 
     /* Проверка и создание системного интрефейса */
@@ -91,6 +85,12 @@ int16_t EcoMain(IEcoUnknown* pIUnk) {
         /* Освобождение в случае ошибки */
         goto Release;
     }
+    /* Регистрация статического компонента для работы со списком */
+    //result = pIBus->pVTbl->RegisterComponent(pIBus, &CID_EcoLab2, (IEcoUnknown *)GetIEcoComponentFactoryPtr_1F5DF16EE1BF43B999A434ED38FE8F3B);
+    if (result != 0 ) {
+        /* Освобождение в случае ошибки */
+        goto Release;
+    }
 #endif
     /* Получение интерфейса управления памятью */
     result = pIBus->pVTbl->QueryComponent(pIBus, &CID_EcoMemoryManager1, 0, &IID_IEcoMemoryAllocator1, (void**) &pIMem);
@@ -102,20 +102,25 @@ int16_t EcoMain(IEcoUnknown* pIUnk) {
     }
 
     /* Получение тестируемого интерфейса */
-    result = pIBus->pVTbl->QueryComponent(pIBus, &CID_EcoLab1, 0, &IID_IEcoLab1, (void**) &pIEcoLab1);
     
-    if (result != 0 || pIEcoLab1 == 0) {
+    result = pIBus->pVTbl->QueryComponent(pIBus, &CID_EcoLab2, 0, &IID_IEcoLab2, (void**) &pIEcoLab2);
+    
+    if (result != 0 || pIEcoLab2 == 0) {
         /* Освобождение интерфейсов в случае ошибки */
         goto Release;
     }
     
     /* ПРИМЕРЫ ВКЛЮЧЕНИЯ/АГРЕГИРОВАНИЯ */
+    
+    //Получаю агрегированный компонент EcoLab1 по интерфейсу IEcoLab1
+    result = pIEcoLab2->pVTbl->QueryInterface(pIEcoLab2, &IID_IEcoLab1, (void**) &pIEcoLab1);
 
     //Получаю агрегированный компонент EcoCalculatorA по интерфейсу IEcoCalculatorX
     result = pIEcoLab1->pVTbl->QueryInterface(pIEcoLab1, &IID_IEcoCalculatorX, (void**) &pIEcoCalculatorX);
     
     //Получаю агрегированный компонент EcoCalculatorE по интерфейсу IEcoCalculatorY
     result = pIEcoLab1->pVTbl->QueryInterface(pIEcoLab1, &IID_IEcoCalculatorY, (void**) &pIEcoCalculatorY);
+    
     
     printf("Examples of inclusion method execution:\n");
     
@@ -158,7 +163,8 @@ int16_t EcoMain(IEcoUnknown* pIUnk) {
     pIEcoCalculatorY->pVTbl->QueryInterface(pIEcoCalculatorY, &IID_IEcoCalculatorX, (void**)&p_xB);
     
     res = p_xB->pVTbl->Addition(p_xB, 8, 4);
-    printf("Addition with EcoCalculatorX from aggreagated component E: %d\n", res);
+    printf("Addition with EcoCalculatorX from aggreagated component E aggregated from component EcoLab1: %d\n", res);
+    
 
 Release:
 
