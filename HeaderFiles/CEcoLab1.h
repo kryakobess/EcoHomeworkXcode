@@ -43,6 +43,7 @@ typedef struct CEcoLab1 {
     
     /* Таблица функций интерфейса IEcoCalculatorX */
     IEcoCalculatorXVTbl* m_pVTblIX;
+    
 
     /* Указатель на интерфейс IEcoCalculatorX включаемого компонента EcoCalculatorB */
     IEcoCalculatorX* m_pIXCalculatorB;

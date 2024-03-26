@@ -440,6 +440,11 @@
 					"$(ECO_FRAMEWORK)/Eco.Core1/SharedFiles",
 					"$(ECO_FRAMEWORK)/Eco.InterfaceBus1/SharedFiles",
 					/Users/nikitakuritsyn/Documents/Eco.Lab1/SharedFiles,
+					/Users/nikitakuritsyn/Documents/EcoHW/001.InsideACOM/Lessons/Lesson02/Eco.CalculatorA/SharedFiles,
+					/Users/nikitakuritsyn/Documents/EcoHW/001.InsideACOM/Lessons/Lesson03/Eco.CalculatorB/SharedFiles,
+					/Users/nikitakuritsyn/Documents/EcoHW/001.InsideACOM/Lessons/Lesson05/Eco.CalculatorC/SharedFiles,
+					/Users/nikitakuritsyn/Documents/EcoHW/001.InsideACOM/Lessons/Lesson06/Eco.CalculatorD/SharedFiles,
+					/Users/nikitakuritsyn/Documents/EcoHW/001.InsideACOM/Lessons/Lesson07/Eco.CalculatorE/SharedFiles,
 				);
 				PRODUCT_NAME = 1F5DF16EE1BF43B999A434ED38FE8F3B;
 				SKIP_INSTALL = YES;
@@ -468,6 +473,11 @@
 					"$(ECO_FRAMEWORK)/Eco.Core1/SharedFiles",
 					"$(ECO_FRAMEWORK)/Eco.InterfaceBus1/SharedFiles",
 					/Users/nikitakuritsyn/Documents/Eco.Lab1/SharedFiles,
+					/Users/nikitakuritsyn/Documents/EcoHW/001.InsideACOM/Lessons/Lesson02/Eco.CalculatorA/SharedFiles,
+					/Users/nikitakuritsyn/Documents/EcoHW/001.InsideACOM/Lessons/Lesson03/Eco.CalculatorB/SharedFiles,
+					/Users/nikitakuritsyn/Documents/EcoHW/001.InsideACOM/Lessons/Lesson05/Eco.CalculatorC/SharedFiles,
+					/Users/nikitakuritsyn/Documents/EcoHW/001.InsideACOM/Lessons/Lesson06/Eco.CalculatorD/SharedFiles,
+					/Users/nikitakuritsyn/Documents/EcoHW/001.InsideACOM/Lessons/Lesson07/Eco.CalculatorE/SharedFiles,
 				);
 				PRODUCT_NAME = 1F5DF16EE1BF43B999A434ED38FE8F3B;
 				SKIP_INSTALL = YES;

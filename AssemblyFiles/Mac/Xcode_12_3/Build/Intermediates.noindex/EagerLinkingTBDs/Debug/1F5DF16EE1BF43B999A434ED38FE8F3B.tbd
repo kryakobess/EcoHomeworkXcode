@@ -5,30 +5,39 @@
         "data": {
           "global": [
             "_g_x1F5DF16EE1BF43B999A434ED38FE8F3BFactoryVTbl",
+            "_g_xBD6414C29096423EA90C04D77AFD1CADVTbl",
+            "_g_x9322111622484742AE0682819447843DVTbl",
             "_g_x277FC00C35624096AFCFC125B94EEC90VTbl",
             "_g_x1F5DF16EE1BF43B999A434ED38FE8F3BFactory"
           ]
         },
         "text": {
           "global": [
+            "_X_AddRef",
             "_CEcoLab2Factory_Alloc",
             "_CEcoLab2Factory_get_Name",
+            "_Y_Division",
             "_CEcoLab2_AddRef",
             "_deleteCEcoLab2",
             "_CEcoLab2Factory_AddRef",
-            "_CEcoLab2_gnome_sort_opt",
+            "_X_Addition",
+            "_Y_QueryInterface",
             "_createCEcoLab2",
             "_CEcoLab2Factory_get_Manufacturer",
+            "_Y_AddRef",
             "_CEcoLab2Factory_Release",
             "_GetIEcoComponentFactoryPtr",
             "_initCEcoLab2",
             "_CEcoLab2_Release",
             "_CEcoLab2Factory_get_Version",
             "_CEcoLab2_QueryInterface",
-            "_swap",
+            "_X_Release",
             "_CEcoLab2Factory_Init",
-            "_CEcoLab2_gnome_sort",
-            "_CEcoLab2Factory_QueryInterface"
+            "_X_Subtraction",
+            "_Y_Multiplication",
+            "_Y_Release",
+            "_CEcoLab2Factory_QueryInterface",
+            "_X_QueryInterface"
           ]
         }
       }

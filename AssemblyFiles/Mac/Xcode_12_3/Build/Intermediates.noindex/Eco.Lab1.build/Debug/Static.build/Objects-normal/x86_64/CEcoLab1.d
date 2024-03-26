@@ -1,5 +1,5 @@
 dependencies: \
-  /Users/nikitakuritsyn/Documents/Eco.Lab1/SourceFiles/CEcoLab1.c \
+  /Users/nikitakuritsyn/Documents/projects/EcoHomeworkXcode/SourceFiles/CEcoLab1.c \
   /Users/nikitakuritsyn/Documents/EcoHW/Eco.Framework/Eco.Core1/SharedFiles/IEcoSystem1.h \
   /Users/nikitakuritsyn/Documents/EcoHW/Eco.Framework/Eco.Core1/SharedFiles/IEcoBase1.h \
   /Users/nikitakuritsyn/Documents/EcoHW/Eco.Framework/Eco.Core1/SharedFiles/depend.h \
@@ -18,8 +18,8 @@ dependencies: \
   /Users/nikitakuritsyn/Documents/EcoHW/001.InsideACOM/Lessons/Lesson06/Eco.CalculatorD/SharedFiles/IEcoCalculatorY.h \
   /Users/nikitakuritsyn/Documents/EcoHW/001.InsideACOM/Lessons/Lesson07/Eco.CalculatorE/SharedFiles/IdEcoCalculatorE.h \
   /Users/nikitakuritsyn/Documents/EcoHW/001.InsideACOM/Lessons/Lesson07/Eco.CalculatorE/SharedFiles/IEcoCalculatorY.h \
-  /Users/nikitakuritsyn/Documents/Eco.Lab1/HeaderFiles/CEcoLab1.h \
-  /Users/nikitakuritsyn/Documents/Eco.Lab1/SharedFiles/IEcoLab1.h \
+  /Users/nikitakuritsyn/Documents/projects/EcoHomeworkXcode/HeaderFiles/CEcoLab1.h \
+  /Users/nikitakuritsyn/Documents/projects/EcoHomeworkXcode/SharedFiles/IEcoLab1.h \
   /Users/nikitakuritsyn/Documents/EcoHW/Eco.Framework/Eco.MemoryManager1/SharedFiles/IdEcoMemoryManager1.h \
   /Users/nikitakuritsyn/Documents/EcoHW/Eco.Framework/Eco.MemoryManager1/SharedFiles/IEcoMemoryManager1.h \
   /Users/nikitakuritsyn/Documents/EcoHW/Eco.Framework/Eco.MemoryManager1/SharedFiles/IEcoMemoryAllocator1.h
