@@ -14,8 +14,8 @@
             filePath = "../../../SourceFiles/CEcoLab1.c"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "210"
-            endingLineNumber = "210"
+            startingLineNumber = "173"
+            endingLineNumber = "173"
             landmarkName = "CEcoLab1_gnome_sort(me, arr, count, size)"
             landmarkType = "9">
          </BreakpointContent>
@@ -30,8 +30,8 @@
             filePath = "../../../SourceFiles/CEcoLab1.c"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "345"
-            endingLineNumber = "345"
+            startingLineNumber = "308"
+            endingLineNumber = "308"
             landmarkName = "initCEcoLab1(me, pIUnkSystem)"
             landmarkType = "9">
          </BreakpointContent>
