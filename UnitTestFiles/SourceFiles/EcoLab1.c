@@ -32,135 +32,15 @@
 #include "IdEcoCalculatorD.h"
 #include "IdEcoCalculatorE.h"
 
-#define ARRAY_SIZE 8
-#define STRING_MAX_SIZE 10
 
-int intComp(const void* p, const void* q) {
-    // Get the values at given addresses
-    int l = *(const int*)p;
-    int r = *(const int*)q;
-
-    return (l > r) - (l < r);
-}
-
-int intDescComp(const void* p, const void* q) {
-    // Get the values at given addresses
-    int l = *(const int*)p;
-    int r = *(const int*)q;
-
-    return (l < r) - (l > r);
-}
-
-int stringComp(const void* p, const void* q) {
-    char* l = *(char* const*) p;
-    char* r = *(char* const*) q;
-    return strcmp(l, r);
-}
-
-int doubleComp(const void* p, const void* q) {
-    double l = *(const double*)p;
-    double r = *(const double*)q;
-    return l > r ? 1 : l < r ? -1 : 0;
-}
-
-char* rand_string(char *str, size_t size) {
-    const char charset[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
-    if (size) {
-        --size;
-        for (size_t n = 0; n < size; n++) {
-            int key = rand() % (int) (sizeof charset - 1);
-            str[n] = charset[key];
-        }
-        str[size] = '\0';
+IEcoLab1* back(IEcoLab1* pILab1) {
+    /* Вы всегда можете вернуться туда, откуда начали. */
+    IEcoCalculatorX* p_x = 0;
+    IEcoLab1* p_lab1 = 0;
+    if (pILab1->pVTbl->QueryInterface(pILab1, &IID_IEcoCalculatorX, (void**)&p_x) == 0) {
+        p_x->pVTbl->QueryInterface(p_x, &IID_IEcoLab1, (void**)&p_lab1);
     }
-    return str;
-}
-
-void printArr(int* arr, size_t count) {
-    for (size_t i = 0; i < count; i++) {
-        printf("%d ", arr[i]);
-    }
-    printf("\n");
-}
-
-double getCurrentTime(void) {
-    return (double)(clock()) * 1000 / (CLOCKS_PER_SEC);
-}
-
-void doBenchmark(IEcoLab1* pIEcoLab1, void* arr, size_t size, size_t count, int (*comp)(const void *, const void*)) {
-    double start, end, diff;
-    
-    start = getCurrentTime();
-    pIEcoLab1->pVTbl->gnome_sort(pIEcoLab1, arr, count, size, comp);
-    end = getCurrentTime();
-    diff = end - start;
-    printf("GnomeSort: count: %zu; ms: %f\n", count, diff);
-    
-    start = getCurrentTime();
-    pIEcoLab1->pVTbl->gnome_sort_opt(pIEcoLab1, arr, count, size, comp);
-    end = getCurrentTime();
-    diff = end - start;
-    printf("GnomeSort with optimization: count: %zu; ms: %f\n", count, diff);
-    
-    start = getCurrentTime();
-    qsort(arr, size, count, comp);
-    end = getCurrentTime();
-    diff = end - start;
-    printf("Qsort: count: %zu; ms: %f\n", count, diff);
-}
-
-void doBenchmarkOnIntArray(IEcoLab1* pIEcoLab1) {
-    srand(time(NULL));
-    printf("Start benchmarking on random integer arrays\n");
-    for (size_t count = 1e3; count <= 2e4; count+=1e3) {
-        int arr[count];
-        for (size_t i = 0; i < count; ++i) {
-            arr[i] = rand();
-        }
-        doBenchmark(pIEcoLab1, arr, sizeof(arr[0]), count, intComp);
-    }
-}
-
-void doBenchmarkOnStringArray(IEcoLab1* pIEcoLab1, IEcoMemoryAllocator1* pIMem) {
-    srand(time(NULL));
-    printf("Start benchmarking on random char* arrays\n");
-    for (size_t count = 1e3; count <= 2e4; count+=1e3) {
-        char* arr[count];
-        for (size_t i = 0; i < count; ++i) {
-            char* line = pIMem->pVTbl->Alloc(pIMem, STRING_MAX_SIZE);
-            arr[i] = rand_string(line, STRING_MAX_SIZE);
-        }
-        doBenchmark(pIEcoLab1, arr, sizeof(arr[0]), count, stringComp);
-        for (int i = 0; i < count; ++i) {
-            pIMem->pVTbl->Free(pIMem, arr[i]);
-        }
-    }
-}
-
-void doBenchmarkOnDoubleArray(IEcoLab1* pIEcoLab1) {
-    double maxRange = 100.0; double minRange = -100.0;
-    double range = maxRange - minRange;
-    double div = RAND_MAX / range;
-    printf("Start benchmarking on random double arrays\n");
-    srand(time(NULL));
-    for (size_t count = 2e3; count <= 2e4; count+=1e3) {
-        double arr[count];
-        for (size_t i = 0; i < count; ++i) {
-            arr[i] = minRange + (rand() / div);
-        }
-        doBenchmark(pIEcoLab1, arr, sizeof(arr[0]), count, doubleComp);
-    }
-}
-
-void doBenchmarkOnIncreasingInt(IEcoLab1* pIEcoLab1, int (*comp)(const void *, const void*)) {
-    printf("Start benchmarking on increasing integer arrays\n");
-    for (size_t count = 1e3; count <= 2e4; count += 1e3) {
-        int arr[count];
-        for (size_t i = 0; i < count; ++i) {
-            arr[i] = i;
-        }
-        doBenchmark(pIEcoLab1, arr, sizeof(arr[0]), count, comp);
-    }
+    return p_lab1;
 }
 
 /*
@@ -185,7 +65,9 @@ int16_t EcoMain(IEcoUnknown* pIUnk) {
 
     /* Указатель на тестируемый интерфейс */
     IEcoLab1* pIEcoLab1 = 0;
+    IEcoCalculatorX* pIEcoCalculatorX = 0;
     IEcoCalculatorY* pIEcoCalculatorY = 0;
+    int res = 0;
 
     /* Проверка и создание системного интрефейса */
     if (pISys == 0) {
@@ -222,23 +104,61 @@ int16_t EcoMain(IEcoUnknown* pIUnk) {
     /* Получение тестируемого интерфейса */
     result = pIBus->pVTbl->QueryComponent(pIBus, &CID_EcoLab1, 0, &IID_IEcoLab1, (void**) &pIEcoLab1);
     
-    result = pIBus->pVTbl->QueryComponent(pIBus, &CID_EcoLab1, 0, &IID_IEcoCalculatorY, (void**) &pIEcoCalculatorY);
-    
-    //Получаю компонент EcoCalculatorB по интерфейсу IEcoCalculatorX
-    //result = pIEcoLab1->pVTbl->QueryInterface(pIEcoLab1, &IID_IEcoCalculatorY, (void**) &pIEcoCalculatorX);
-    
-    
-    
     if (result != 0 || pIEcoLab1 == 0) {
         /* Освобождение интерфейсов в случае ошибки */
         goto Release;
     }
-    //doBenchmarkOnIntArray(pIEcoLab1);
+    
+    /* ПРИМЕРЫ ВКЛЮЧЕНИЯ/АГРЕГИРОВАНИЯ */
 
+    //Получаю агрегированный компонент EcoCalculatorA по интерфейсу IEcoCalculatorX
+    result = pIEcoLab1->pVTbl->QueryInterface(pIEcoLab1, &IID_IEcoCalculatorX, (void**) &pIEcoCalculatorX);
     
-    result = pIEcoLab1->pVTbl->Division(pIEcoLab1, 8, 4);
-    printf("%d\n", result);
+    //Получаю агрегированный компонент EcoCalculatorE по интерфейсу IEcoCalculatorY
+    result = pIEcoLab1->pVTbl->QueryInterface(pIEcoLab1, &IID_IEcoCalculatorY, (void**) &pIEcoCalculatorY);
     
+    printf("Examples of inclusion method execution:\n");
+    
+    //Вызываю метод с включенным компонентом EcoCalculatorB
+    res = pIEcoLab1->pVTbl->Addition(pIEcoLab1, 8, 4);
+    printf("Addition: %d\n", res);
+    
+    //Вызываю метод с включенным компонентом EcoCalculatorC
+    res = pIEcoLab1->pVTbl->Subtraction(pIEcoLab1, 8, 4);
+    printf("Addition: %d\n", res);
+    
+    //Вызываю метод с включенным компонентом EcoCalculatorD
+    res = pIEcoLab1->pVTbl->Multiplication(pIEcoLab1, 8, 4);
+    printf("Multiplication: %d\n", res);
+    
+    //Вызываю метод с включенным компонентом EcoCalculatorE
+    res = pIEcoLab1->pVTbl->Division(pIEcoLab1, 8, 4);
+    printf("Division: %d\n", res);
+    
+    printf("Examples of aggregation method execution:\n");
+    
+    //Вызываю метод Addition агрегированного компонента EcoCalculatorA
+    res = pIEcoCalculatorX->pVTbl->Addition(pIEcoCalculatorX,8,4);
+    printf("Addition with aggregation of Component A: %d\n", res);
+    
+    //Вызываю метод Subtraction агрегированного компонента EcoCalculatorA
+    res = pIEcoCalculatorX->pVTbl->Subtraction(pIEcoCalculatorX,8,4);
+    printf("Subtraction with aggregation of Component A: %d\n", res);
+    
+    //Вызываю метод Multiplication агрегированного компонента EcoCalculatorE
+    res = pIEcoCalculatorY->pVTbl->Multiplication(pIEcoCalculatorY,8,4);
+    printf("Multiplication with aggregation of Component E: %d\n", res);
+    
+    //Вызываю метод Division агрегированного компонента EcoCalculatorE
+    res = pIEcoCalculatorY->pVTbl->Division(pIEcoCalculatorY,8,4);
+    printf("Addition with aggregation of Component E: %d\n", res);
+    
+    /* СВОЙСТВА ИНТЕРФЕЙСОВ */
+    IEcoCalculatorX* p_xB = 0;
+    pIEcoCalculatorY->pVTbl->QueryInterface(pIEcoCalculatorY, &IID_IEcoCalculatorX, (void**)&p_xB);
+    
+    res = p_xB->pVTbl->Addition(p_xB, 8, 4);
+    printf("Addition with EcoCalculatorX from aggreagated component E: %d\n", res);
 
 Release:
 

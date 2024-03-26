@@ -40,8 +40,10 @@ typedef struct CEcoLab1 {
 
     /* Системный интерфейс */
     IEcoSystem1* m_pISys;
-
     
+    /* Таблица функций интерфейса IEcoCalculatorX */
+    IEcoCalculatorXVTbl* m_pVTblIX;
+
     /* Указатель на интерфейс IEcoCalculatorX включаемого компонента EcoCalculatorB */
     IEcoCalculatorX* m_pIXCalculatorB;
     
