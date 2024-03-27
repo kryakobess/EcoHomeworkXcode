@@ -35,6 +35,58 @@
 #include "IdEcoCalculatorD.h"
 #include "IdEcoCalculatorE.h"
 
+
+void examplesOnX(IEcoCalculatorX* pIEcoCalculatorX) {
+    int res = 0;
+    
+    res = pIEcoCalculatorX->pVTbl->Addition(pIEcoCalculatorX,8,4);
+    printf("Addition result: %d\n", res);
+    
+    res = pIEcoCalculatorX->pVTbl->Subtraction(pIEcoCalculatorX,8,4);
+    printf("Subtraction result: %d\n", res);
+}
+
+void examplesOnY(IEcoCalculatorY* pIEcoCalculatorY) {
+    int res = 0;
+    
+    res = pIEcoCalculatorY->pVTbl->Multiplication(pIEcoCalculatorY,8,4);
+    printf("Multiplication result: %d\n", res);
+    
+    res = pIEcoCalculatorY->pVTbl->Division(pIEcoCalculatorY,8,4);
+    printf("Division result: %d\n", res);
+}
+
+void examplesOfEcoLab1Inclusion(IEcoLab1* pIEcoLab1) {
+    int res = 0;
+    
+    //Вызываю метод с включенным компонентом EcoCalculatorB
+    res = pIEcoLab1->pVTbl->Addition(pIEcoLab1, 8, 4);
+    printf("Addition from IEcoLab1 with inclusion, result: %d\n", res);
+    
+    //Вызываю метод с включенным компонентом EcoCalculatorC
+    res = pIEcoLab1->pVTbl->Subtraction(pIEcoLab1, 8, 4);
+    printf("Substraction from IEcoLab1 with inclusion, result: %d\n", res);
+    
+    //Вызываю метод с включенным компонентом EcoCalculatorD
+    res = pIEcoLab1->pVTbl->Multiplication(pIEcoLab1, 8, 4);
+    printf("Multiplication from IEcoLab1 with inclusion, result: %d\n", res);
+    
+    //Вызываю метод с включенным компонентом EcoCalculatorE
+    res = pIEcoLab1->pVTbl->Division(pIEcoLab1, 8, 4);
+    printf("Division from IEcoLab1 with inclusion, result: %d\n", res);
+}
+
+IEcoLab2* intersfaceBack(IEcoLab2* pEcoLab2) {
+    IEcoCalculatorX* pX = 0;
+    IEcoLab2* pl2 = 0;
+    
+    if (pEcoLab2->pVTbl->QueryInterface(pEcoLab2, &IID_IEcoCalculatorX, (void**)&pX) == 0) {
+        pX->pVTbl->QueryInterface(pX, &IID_IEcoLab2, (void**)&pl2);
+    }
+    
+    return pl2;
+}
+
 /*
  *
  * <сводка>
@@ -115,55 +167,44 @@ int16_t EcoMain(IEcoUnknown* pIUnk) {
     //Получаю агрегированный компонент EcoLab1 по интерфейсу IEcoLab1
     result = pIEcoLab2->pVTbl->QueryInterface(pIEcoLab2, &IID_IEcoLab1, (void**) &pIEcoLab1);
 
-    //Получаю агрегированный компонент EcoCalculatorA по интерфейсу IEcoCalculatorX
+    
+    //ИСПОЛЬЗУЮ ВКЛЮЧЕНИЕ В МЕТОДАХ ИНТЕРФЕЙСА ECOLAB1 (1 способ включения)
+    
+    printf("Examples of inclusion in custom method in IEcoLab1:\n");
+    examplesOfEcoLab1Inclusion(pIEcoLab1);
+    
+    //ИСПОЛЬЗУЮ ВКЛЮЧЕНИЕ В РЕАЛИЗОВАННЫХ МЕТОДАХ ИНТЕРФЕЙСА IEcoCalculatorX и IEcoCalculatorY внутри EcoLab2 (2й способ включения)
+    
+    //Получаю включенный компонент по интерфейсу IEcoCalculatorX из EcoLab2
+    result = pIEcoLab2->pVTbl->QueryInterface(pIEcoLab2, &IID_IEcoCalculatorX, (void**) &pIEcoCalculatorX);
+    
+    //Получаю включенный компонент по интерфейсу IEcoCalculatorY из EcoLab2
+    result = pIEcoLab2->pVTbl->QueryInterface(pIEcoLab2, &IID_IEcoCalculatorY, (void**) &pIEcoCalculatorY);
+    
+    printf("Examples of inclusion in overwriten method of IEcoCalculatorX:\n");
+    examplesOnX(pIEcoCalculatorX);
+    
+    printf("Examples of inclusion in overwriten method of IEcoCalculatorY:\n");
+    examplesOnY(pIEcoCalculatorY);
+    
+    //АГРЕГАЦИЯ
+    //ДАЛЕЕ ПРИ ИСПОЛЬЗОВАНИИ АГРЕГИРОВАННЫХ В IEcoLab1 КОМПОНЕНТОВ ПРОДЕМОНСТРИРОВАНО СВОЙСТВО ВЛОЖЕННОСТИ ИНТЕРФЕЙСОВ
+    
+    //Получаю агрегированный компонент по интерфейсу IEcoCalculatorX из EcoLab1
     result = pIEcoLab1->pVTbl->QueryInterface(pIEcoLab1, &IID_IEcoCalculatorX, (void**) &pIEcoCalculatorX);
     
-    //Получаю агрегированный компонент EcoCalculatorE по интерфейсу IEcoCalculatorY
+    //Получаю агрегированный компонент по интерфейсу IEcoCalculatorY из EcoLab1
     result = pIEcoLab1->pVTbl->QueryInterface(pIEcoLab1, &IID_IEcoCalculatorY, (void**) &pIEcoCalculatorY);
     
+    printf("Examples of aggregation of EcoCalculatorX:\n");
+    examplesOnX(pIEcoCalculatorX);
     
-    printf("Examples of inclusion method execution:\n");
+    printf("Examples of aggregation of EcoCalculatorY:\n");
+    examplesOnY(pIEcoCalculatorY);
     
-    //Вызываю метод с включенным компонентом EcoCalculatorB
-    res = pIEcoLab1->pVTbl->Addition(pIEcoLab1, 8, 4);
-    printf("Addition: %d\n", res);
-    
-    //Вызываю метод с включенным компонентом EcoCalculatorC
-    res = pIEcoLab1->pVTbl->Subtraction(pIEcoLab1, 8, 4);
-    printf("Addition: %d\n", res);
-    
-    //Вызываю метод с включенным компонентом EcoCalculatorD
-    res = pIEcoLab1->pVTbl->Multiplication(pIEcoLab1, 8, 4);
-    printf("Multiplication: %d\n", res);
-    
-    //Вызываю метод с включенным компонентом EcoCalculatorE
-    res = pIEcoLab1->pVTbl->Division(pIEcoLab1, 8, 4);
-    printf("Division: %d\n", res);
-    
-    printf("Examples of aggregation method execution:\n");
-    
-    //Вызываю метод Addition агрегированного компонента EcoCalculatorA
-    res = pIEcoCalculatorX->pVTbl->Addition(pIEcoCalculatorX,8,4);
-    printf("Addition with aggregation of Component A: %d\n", res);
-    
-    //Вызываю метод Subtraction агрегированного компонента EcoCalculatorA
-    res = pIEcoCalculatorX->pVTbl->Subtraction(pIEcoCalculatorX,8,4);
-    printf("Subtraction with aggregation of Component A: %d\n", res);
-    
-    //Вызываю метод Multiplication агрегированного компонента EcoCalculatorE
-    res = pIEcoCalculatorY->pVTbl->Multiplication(pIEcoCalculatorY,8,4);
-    printf("Multiplication with aggregation of Component E: %d\n", res);
-    
-    //Вызываю метод Division агрегированного компонента EcoCalculatorE
-    res = pIEcoCalculatorY->pVTbl->Division(pIEcoCalculatorY,8,4);
-    printf("Addition with aggregation of Component E: %d\n", res);
-    
-    /* СВОЙСТВА ИНТЕРФЕЙСОВ */
-    IEcoCalculatorX* p_xB = 0;
-    pIEcoCalculatorY->pVTbl->QueryInterface(pIEcoCalculatorY, &IID_IEcoCalculatorX, (void**)&p_xB);
-    
-    res = p_xB->pVTbl->Addition(p_xB, 8, 4);
-    printf("Addition with EcoCalculatorX from aggreagated component E aggregated from component EcoLab1: %d\n", res);
+    //ВОЗВРАТНОЕ СВОЙСТВО ИНТЕРФЕЙСА
+    printf("Returning interface from another interface:\n");
+    printf("interfaces are equal: %s\n", pIEcoLab2 == intersfaceBack(pIEcoLab2) ? "true" : "false");
     
 
 Release:
