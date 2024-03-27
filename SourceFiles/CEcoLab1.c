@@ -294,8 +294,20 @@ int16_t ECOCALLMETHOD initCEcoLab1(/*in*/ struct IEcoLab1* me, /* in */ struct I
     /* Создание внутреннего компонента "EcoCalculatorA" c поддержкой агрегирования */
     result = pIBus->pVTbl->QueryComponent(pIBus, &CID_EcoCalculatorA, pOuterUnknown, &IID_IEcoUnknown, (void**) &pCMe->m_pInnerUnknownA);
     
+    if (result != 0 || pCMe->m_pInnerUnknownA == 0) {
+        result = pIBus->pVTbl->QueryComponent(pIBus, &CID_EcoCalculatorB, pOuterUnknown, &IID_IEcoUnknown, (void**) &pCMe->m_pInnerUnknownA);
+    }
+    
+    if (result != 0 || pCMe->m_pInnerUnknownA == 0) {
+        result = pIBus->pVTbl->QueryComponent(pIBus, &CID_EcoCalculatorC, pOuterUnknown, &IID_IEcoUnknown, (void**) &pCMe->m_pInnerUnknownA);
+    }
+    
     /* Создание внутреннего компонента "EcoCalculatorE" c поддержкой агрегирования */
     result = pIBus->pVTbl->QueryComponent(pIBus, &CID_EcoCalculatorE, pOuterUnknown, &IID_IEcoUnknown, (void**) &pCMe->m_pInnerUnknownE);
+    
+    if (result != 0 || pCMe->m_pInnerUnknownE == 0) {
+        result = pIBus->pVTbl->QueryComponent(pIBus, &CID_EcoCalculatorD, pOuterUnknown, &IID_IEcoUnknown, (void**) &pCMe->m_pInnerUnknownE);
+    }
     
     /* ВКЛЮЧЕНИЕ */
     
