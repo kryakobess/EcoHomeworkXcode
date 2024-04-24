@@ -103,13 +103,8 @@ uint32_t ECOCALLMETHOD CEcoLab1Sink_Release(/* in */ struct IEcoLab1Events* me) 
     return pCMe->m_cRef;
 }
 
-int16_t ECOCALLMETHOD CEcoLab1Sink_OnSwap(/* in */ struct IEcoLab1Events* me, /* in */ void* arr, /* in */ size_t leftI, size_t rightI, size_t size) {
+int16_t ECOCALLMETHOD CEcoLab1Sink_OnSwap(/* in */ struct IEcoLab1Events* me, /* in */ void* el1, void* el2, size_t size) {
     CEcoLab1Sink* pCMe = (CEcoLab1Sink*)me;
-    
-    //printf("Swapping elements with indices: %zu %zu\n", leftI, rightI);
-    
-    void* el1 = arr + (leftI * size);
-    void* el2 = arr + (rightI * size);
 
     char buffer[size];
     char* p_el1 = (char*) el1;
@@ -154,17 +149,10 @@ int intComp(const void* p, const void* q) {
     return (l > r) - (l < r);
 }
 
-int16_t ECOCALLMETHOD CEcoLab1Sink_OnCompare(/* in */ struct IEcoLab1Events* me, /* in */ void* arr, /* in */ size_t leftI, size_t rightI, size_t size) {
+int16_t ECOCALLMETHOD CEcoLab1Sink_OnCompare(/* in */ struct IEcoLab1Events* me, /* in */ void* el1, /* in */ void* el2) {
     CEcoLab1Sink* pCMe = (CEcoLab1Sink*)me;
     
-    void* left = arr + (leftI * size);
-    void* right = arr + (rightI * size);
-    int res =  intComp(left, right);
-    
-    char sign = res >= 0 ? '>' : '<';
-    //printf("Element with index %zu %c Element with index %zu\n", leftI, sign, rightI);
-    
-    return res;
+    return intComp(el1, el2);
 }
 
 

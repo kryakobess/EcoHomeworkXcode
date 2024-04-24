@@ -40,11 +40,11 @@ typedef struct IEcoLab1VTblEvents {
     uint32_t (ECOCALLMETHOD *Release )(/* in */ struct IEcoLab1Events* me);
 
     /* IEcoLab1Events */
-    int16_t (ECOCALLMETHOD *OnSwap)(/* in */ struct IEcoLab1Events* me, /* in */ void* arr, /* in */ size_t leftI, size_t rightI, size_t size);
+    int16_t (ECOCALLMETHOD *OnSwap)(/* in */ struct IEcoLab1Events* me, /* in */ void* el1, void* el2, size_t size);
     
     int16_t (ECOCALLMETHOD *OnContinueLog)(/* in */ struct IEcoLab1Events* me, /* in */ void* arr, size_t i, size_t count, bool isForward);
     
-    int16_t (ECOCALLMETHOD *OnCompare)(/* in */ struct IEcoLab1Events* me, /* in */ void* arr, /* in */ size_t leftI, size_t rightI, size_t size);
+    int16_t (ECOCALLMETHOD *OnCompare)(/* in */ struct IEcoLab1Events* me, /* in */ void* el1, void* el2);
 
 } IEcoLab1VTblEvents, *IEcoLab1VTblEventsPtr;
 

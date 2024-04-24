@@ -443,9 +443,9 @@
             filePath = "../../../UnitTestFiles/SourceFiles/CEcoLab1Sink.c"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "157"
-            endingLineNumber = "157"
-            landmarkName = "CEcoLab1Sink_OnCompare(me, arr, leftI, rightI, size)"
+            startingLineNumber = "152"
+            endingLineNumber = "152"
+            landmarkName = "CEcoLab1Sink_OnCompare(me, el1, el2)"
             landmarkType = "9">
          </BreakpointContent>
       </BreakpointProxy>
@@ -459,9 +459,9 @@
             filePath = "../../../UnitTestFiles/SourceFiles/CEcoLab1Sink.c"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "159"
-            endingLineNumber = "159"
-            landmarkName = "CEcoLab1Sink_OnCompare(me, arr, leftI, rightI, size)"
+            startingLineNumber = "154"
+            endingLineNumber = "154"
+            landmarkName = "CEcoLab1Sink_OnCompare(me, el1, el2)"
             landmarkType = "9">
             <Locations>
                <Location
@@ -507,8 +507,8 @@
             filePath = "../../../UnitTestFiles/SourceFiles/CEcoLab1Sink.c"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "156"
-            endingLineNumber = "156"
+            startingLineNumber = "151"
+            endingLineNumber = "151"
             landmarkName = "unknown"
             landmarkType = "0">
          </BreakpointContent>

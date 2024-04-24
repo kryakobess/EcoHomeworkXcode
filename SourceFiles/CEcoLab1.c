@@ -136,7 +136,7 @@ int16_t ECOCALLMETHOD CEcoLab1_Fire_OnSwap(/* in */ struct IEcoLab1* me, /* in *
             while (pEnum->pVTbl->Next(pEnum, 1, &cd, 0) == 0) {
                 result = cd.pUnk->pVTbl->QueryInterface(cd.pUnk, &IID_IEcoLab1Events, (void**)&pIEvents);
                 if ( (result == 0) && (pIEvents != 0) ) {
-                    result = pIEvents->pVTbl->OnSwap(pIEvents, arr, leftI, rightI, size);
+                    result = pIEvents->pVTbl->OnSwap(pIEvents, arr + (leftI * size), arr + (rightI * size), size);
                     pIEvents->pVTbl->Release(pIEvents);
                 }
                 cd.pUnk->pVTbl->Release(cd.pUnk);
@@ -196,7 +196,7 @@ int16_t ECOCALLMETHOD CEcoLab1_Fire_OnCompare(/* in */ struct IEcoLab1* me, /* i
             while (pEnum->pVTbl->Next(pEnum, 1, &cd, 0) == 0) {
                 result = cd.pUnk->pVTbl->QueryInterface(cd.pUnk, &IID_IEcoLab1Events, (void**)&pIEvents);
                 if ( (result == 0) && (pIEvents != 0) ) {
-                    result = pIEvents->pVTbl->OnCompare(pIEvents, arr, leftI, rightI, size);
+                    result = pIEvents->pVTbl->OnCompare(pIEvents, arr + (leftI * size), arr + (rightI * size));
                     pIEvents->pVTbl->Release(pIEvents);
                 }
                 cd.pUnk->pVTbl->Release(cd.pUnk);
