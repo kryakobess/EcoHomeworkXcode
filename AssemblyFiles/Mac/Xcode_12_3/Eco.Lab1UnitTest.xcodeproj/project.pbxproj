@@ -15,12 +15,13 @@
 		FD336EE22B837E5F0058E12A /* lib00000000000000000000000000000100.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 01C7121D27F2119C00AE9906 /* lib00000000000000000000000000000100.a */; };
 		FD336EE42B837FB30058E12A /* lib0000000000000000000000004D656D31.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FD336EE32B837FB30058E12A /* lib0000000000000000000000004D656D31.a */; };
 		FD336EE52B83B01A0058E12A /* lib0000000000000000000000004D656D31.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 01C7122427F211EF00AE9906 /* lib0000000000000000000000004D656D31.a */; };
-		FD336EEB2B846B7D0058E12A /* lib1F5DF16EE1BF43B999A434ED38FE8F3A.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FD336EEA2B846B7D0058E12A /* lib1F5DF16EE1BF43B999A434ED38FE8F3A.a */; };
 		FD56C8B02BAD982800F54A5B /* lib3A8E44677E82475CB4A3719ED8397E61.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FD56C8AF2BAD982800F54A5B /* lib3A8E44677E82475CB4A3719ED8397E61.a */; };
 		FD56C8B22BAD984900F54A5B /* lib872FEF1DE3314B87AD44D1E7C232C2F0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FD56C8B12BAD984900F54A5B /* lib872FEF1DE3314B87AD44D1E7C232C2F0.a */; };
 		FD56C8B72BADA59D00F54A5B /* lib4828F6552E4540E78121EBD220DC360E.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FD56C8A92BAD97B000F54A5B /* lib4828F6552E4540E78121EBD220DC360E.a */; };
 		FD56C8B82BADA5C300F54A5B /* libAE202E543CE54550899603BD70C62565.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FD56C8AB2BAD97D900F54A5B /* libAE202E543CE54550899603BD70C62565.a */; };
-		FD56C8CB2BB3231300F54A5B /* lib1F5DF16EE1BF43B999A434ED38FE8F3B.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FD56C8CA2BB3231300F54A5B /* lib1F5DF16EE1BF43B999A434ED38FE8F3B.a */; };
+		FDC905832BD50EDE0013610B /* CEcoLab1Sink.c in Sources */ = {isa = PBXBuildFile; fileRef = FDC905822BD50EDE0013610B /* CEcoLab1Sink.c */; };
+		FDC905862BD6D12C0013610B /* lib53884AFC93C448ECAA929C8D3A562281.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FDC905852BD6D12C0013610B /* lib53884AFC93C448ECAA929C8D3A562281.a */; };
+		FDC9058E2BD6D7140013610B /* lib1F5DF16EE1BF43B999A434ED38FE8F3A.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FDC9058D2BD6D7140013610B /* lib1F5DF16EE1BF43B999A434ED38FE8F3A.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -47,7 +48,6 @@
 		01C7122427F211EF00AE9906 /* lib0000000000000000000000004D656D31.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = lib0000000000000000000000004D656D31.a; path = "../../../../Eco.MemoryManager1/BuildFiles/Mac/arm64 x86_64/Debug/lib0000000000000000000000004D656D31.a"; sourceTree = "<group>"; };
 		FD336EE32B837FB30058E12A /* lib0000000000000000000000004D656D31.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = lib0000000000000000000000004D656D31.a; path = "../../../../EcoHW/Eco.Framework/Eco.MemoryManager1/BuildFiles/Mac/arm64 x86_64/StaticRelease/lib0000000000000000000000004D656D31.a"; sourceTree = "<group>"; };
 		FD336EE82B83B46E0058E12A /* lib1F5DF16EE1BF43B999A434ED38FE8F3A.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = lib1F5DF16EE1BF43B999A434ED38FE8F3A.a; path = ../../../../EcoHW/Eco.Lab1/BuildFiles/Linux/x64/StaticDebug/lib1F5DF16EE1BF43B999A434ED38FE8F3A.a; sourceTree = "<group>"; };
-		FD336EEA2B846B7D0058E12A /* lib1F5DF16EE1BF43B999A434ED38FE8F3A.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = lib1F5DF16EE1BF43B999A434ED38FE8F3A.a; path = "../../../BuildFiles/Mac/arm64 x86_64/Debug/lib1F5DF16EE1BF43B999A434ED38FE8F3A.a"; sourceTree = "<group>"; };
 		FD56C8A92BAD97B000F54A5B /* lib4828F6552E4540E78121EBD220DC360E.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = lib4828F6552E4540E78121EBD220DC360E.a; path = "../../../../EcoHW/001.InsideACOM/Lessons/Lesson02/Eco.CalculatorA/BuildFiles/Mac/arm64 x86_64/StaticRelease/lib4828F6552E4540E78121EBD220DC360E.a"; sourceTree = "<group>"; };
 		FD56C8AB2BAD97D900F54A5B /* libAE202E543CE54550899603BD70C62565.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAE202E543CE54550899603BD70C62565.a; path = "../../../../EcoHW/001.InsideACOM/Lessons/Lesson03/Eco.CalculatorB/BuildFiles/Mac/arm64 x86_64/StaticRelease/libAE202E543CE54550899603BD70C62565.a"; sourceTree = "<group>"; };
 		FD56C8AD2BAD97F700F54A5B /* lib4828F6552E4540E78121EBD220DC360E.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = lib4828F6552E4540E78121EBD220DC360E.a; path = "../../../../EcoHW/001.InsideACOM/Lessons/Lesson05/Eco.CalculatorC/BuildFiles/Mac/arm64 x86_64/StaticRelease/lib4828F6552E4540E78121EBD220DC360E.a"; sourceTree = "<group>"; };
@@ -56,6 +56,11 @@
 		FD56C8B32BADA32B00F54A5B /* 4828F6552E4540E78121EBD220DC360E.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = 4828F6552E4540E78121EBD220DC360E.dylib; path = "../../../../EcoHW/001.InsideACOM/Lessons/Lesson02/Eco.CalculatorA/BuildFiles/Mac/arm64 x86_64/DynamicDebug/4828F6552E4540E78121EBD220DC360E.dylib"; sourceTree = "<group>"; };
 		FD56C8B52BADA35000F54A5B /* AE202E543CE54550899603BD70C62565.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = AE202E543CE54550899603BD70C62565.dylib; path = "../../../../EcoHW/001.InsideACOM/Lessons/Lesson03/Eco.CalculatorB/BuildFiles/Mac/arm64 x86_64/StaticDebug/AE202E543CE54550899603BD70C62565.dylib"; sourceTree = "<group>"; };
 		FD56C8CA2BB3231300F54A5B /* lib1F5DF16EE1BF43B999A434ED38FE8F3B.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = lib1F5DF16EE1BF43B999A434ED38FE8F3B.a; path = "../../../../Eco.Lab2/BuildFiles/Mac/arm64 x86_64/Debug/lib1F5DF16EE1BF43B999A434ED38FE8F3B.a"; sourceTree = "<group>"; };
+		FDC905822BD50EDE0013610B /* CEcoLab1Sink.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = CEcoLab1Sink.c; path = ../../../UnitTestFiles/SourceFiles/CEcoLab1Sink.c; sourceTree = "<group>"; };
+		FDC905842BD50EFE0013610B /* CEcoLab1Sink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CEcoLab1Sink.h; path = ../../../UnitTestFiles/HeaderFiles/CEcoLab1Sink.h; sourceTree = "<group>"; };
+		FDC905852BD6D12C0013610B /* lib53884AFC93C448ECAA929C8D3A562281.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = lib53884AFC93C448ECAA929C8D3A562281.a; path = "../../../../../EcoHW/Eco.Framework/Eco.List1/BuildFiles/Mac/arm64 x86_64/StaticRelease/lib53884AFC93C448ECAA929C8D3A562281.a"; sourceTree = "<group>"; };
+		FDC905892BD6D5B30013610B /* lib1F5DF16EE1BF43B999A434ED38FE8F3C.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = lib1F5DF16EE1BF43B999A434ED38FE8F3C.a; path = "../../../BuildFiles/Mac/arm64 x86_64/Debug/lib1F5DF16EE1BF43B999A434ED38FE8F3C.a"; sourceTree = "<group>"; };
+		FDC9058D2BD6D7140013610B /* lib1F5DF16EE1BF43B999A434ED38FE8F3A.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = lib1F5DF16EE1BF43B999A434ED38FE8F3A.a; path = "../../../BuildFiles/Mac/arm64 x86_64/Debug/lib1F5DF16EE1BF43B999A434ED38FE8F3A.a"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,12 +68,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD56C8CB2BB3231300F54A5B /* lib1F5DF16EE1BF43B999A434ED38FE8F3B.a in Frameworks */,
+				FDC9058E2BD6D7140013610B /* lib1F5DF16EE1BF43B999A434ED38FE8F3A.a in Frameworks */,
+				FDC905862BD6D12C0013610B /* lib53884AFC93C448ECAA929C8D3A562281.a in Frameworks */,
 				FD56C8B82BADA5C300F54A5B /* libAE202E543CE54550899603BD70C62565.a in Frameworks */,
 				FD56C8B72BADA59D00F54A5B /* lib4828F6552E4540E78121EBD220DC360E.a in Frameworks */,
 				FD56C8B22BAD984900F54A5B /* lib872FEF1DE3314B87AD44D1E7C232C2F0.a in Frameworks */,
 				FD56C8B02BAD982800F54A5B /* lib3A8E44677E82475CB4A3719ED8397E61.a in Frameworks */,
-				FD336EEB2B846B7D0058E12A /* lib1F5DF16EE1BF43B999A434ED38FE8F3A.a in Frameworks */,
 				FD336EE42B837FB30058E12A /* lib0000000000000000000000004D656D31.a in Frameworks */,
 				01C7122127F211C900AE9906 /* lib00000000000000000000000046534D31.a in Frameworks */,
 				FD336EE22B837E5F0058E12A /* lib00000000000000000000000000000100.a in Frameworks */,
@@ -104,6 +109,9 @@
 		01C7120027F20DF700AE9906 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FDC9058D2BD6D7140013610B /* lib1F5DF16EE1BF43B999A434ED38FE8F3A.a */,
+				FDC905892BD6D5B30013610B /* lib1F5DF16EE1BF43B999A434ED38FE8F3C.a */,
+				FDC905852BD6D12C0013610B /* lib53884AFC93C448ECAA929C8D3A562281.a */,
 				FD56C8CA2BB3231300F54A5B /* lib1F5DF16EE1BF43B999A434ED38FE8F3B.a */,
 				FD56C8B52BADA35000F54A5B /* AE202E543CE54550899603BD70C62565.dylib */,
 				FD56C8B32BADA32B00F54A5B /* 4828F6552E4540E78121EBD220DC360E.dylib */,
@@ -113,7 +121,6 @@
 				FD56C8AB2BAD97D900F54A5B /* libAE202E543CE54550899603BD70C62565.a */,
 				FD56C8A92BAD97B000F54A5B /* lib4828F6552E4540E78121EBD220DC360E.a */,
 				FD336EE82B83B46E0058E12A /* lib1F5DF16EE1BF43B999A434ED38FE8F3A.a */,
-				FD336EEA2B846B7D0058E12A /* lib1F5DF16EE1BF43B999A434ED38FE8F3A.a */,
 				FD336EE32B837FB30058E12A /* lib0000000000000000000000004D656D31.a */,
 				01C7122427F211EF00AE9906 /* lib0000000000000000000000004D656D31.a */,
 				01C7122227F211DC00AE9906 /* lib00000000000000000000000042757331.a */,
@@ -129,6 +136,7 @@
 		01C7120927F20F7F00AE9906 /* Source Files */ = {
 			isa = PBXGroup;
 			children = (
+				FDC905822BD50EDE0013610B /* CEcoLab1Sink.c */,
 				01C7120D27F20FD800AE9906 /* EcoLab1.c */,
 			);
 			name = "Source Files";
@@ -144,6 +152,7 @@
 		01C7120B27F20F9400AE9906 /* Header Files */ = {
 			isa = PBXGroup;
 			children = (
+				FDC905842BD50EFE0013610B /* CEcoLab1Sink.h */,
 			);
 			name = "Header Files";
 			sourceTree = "<group>";
@@ -204,6 +213,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDC905832BD50EDE0013610B /* CEcoLab1Sink.c in Sources */,
 				01C7120F27F20FD800AE9906 /* EcoLab1.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -394,18 +404,18 @@
 					/Users/nikitakuritsyn/Documents/Eco.Lab2/SharedFiles,
 				);
 				LIBRARY_SEARCH_PATHS = (
-					"../../../BuildFiles/Mac/$(ARCHS_STANDARD)/$(CONFIGURATION)",
+					"../../../BuildFiles/Mac/$(ARCHS_STANDARD)/${CONFIGURATION}",
 					"'/Users/nikitakuritsyn/Documents/EcoHW/Eco.Framework/Eco.System1/BuildFiles/Mac/arm64 x86_64/StaticRelease'",
 					"'/Users/nikitakuritsyn/Documents/EcoHW/Eco.Framework/Eco.InterfaceBus1/BuildFiles/Mac/arm64 x86_64/StaticRelease'",
 					"\"/Users/nikitakuritsyn/Documents/EcoHW/Eco.Framework/Eco.MemoryManager1/BuildFiles/Mac/arm64 x86_64/StaticRelease\"",
 					"'/Users/nikitakuritsyn/Documents/EcoHW/Eco.Framework/Eco.FileSystemManagement1/BuildFiles/Mac/arm64 x86_64/StaticRelease'",
-					"\"/Users/nikitakuritsyn/Documents/Eco.Lab1/BuildFiles/Mac/arm64 x86_64/Debug\"",
 					"\"/Users/nikitakuritsyn/Documents/EcoHW/001.InsideACOM/Lessons/Lesson02/Eco.CalculatorA/BuildFiles/Mac/arm64 x86_64/DynamicDebug\"",
 					"\"/Users/nikitakuritsyn/Documents/EcoHW/001.InsideACOM/Lessons/Lesson03/Eco.CalculatorB/BuildFiles/Mac/arm64 x86_64/StaticDebug\"",
 					"'/Users/nikitakuritsyn/Documents/EcoHW/001.InsideACOM/Lessons/Lesson05/Eco.CalculatorC/BuildFiles/Mac/arm64 x86_64/StaticRelease'",
 					"'/Users/nikitakuritsyn/Documents/EcoHW/001.InsideACOM/Lessons/Lesson06/Eco.CalculatorD/BuildFiles/Mac/arm64 x86_64/StaticRelease'",
 					"'/Users/nikitakuritsyn/Documents/EcoHW/001.InsideACOM/Lessons/Lesson07/Eco.CalculatorE/BuildFiles/Mac/arm64 x86_64/StaticRelease'",
-					"\"/Users/nikitakuritsyn/Documents/Eco.Lab2/BuildFiles/Mac/arm64 x86_64/Debug\"",
+					"\"/Users/nikitakuritsyn/Documents/projects/EcoHomeworkXcode/BuildFiles/Mac/arm64 x86_64/Debug\"",
+					"\"/Users/nikitakuritsyn/Documents/EcoHW/Eco.Framework/Eco.List1/BuildFiles/Mac/arm64 x86_64/StaticRelease\"",
 				);
 				OTHER_LDFLAGS = (
 					"-Xlinker",
@@ -442,18 +452,18 @@
 					/Users/nikitakuritsyn/Documents/Eco.Lab2/SharedFiles,
 				);
 				LIBRARY_SEARCH_PATHS = (
-					"../../../BuildFiles/Mac/$(ARCHS_STANDARD)/$(CONFIGURATION)",
+					"../../../BuildFiles/Mac/$(ARCHS_STANDARD)/${CONFIGURATION}",
 					"'/Users/nikitakuritsyn/Documents/EcoHW/Eco.Framework/Eco.System1/BuildFiles/Mac/arm64 x86_64/StaticRelease'",
 					"'/Users/nikitakuritsyn/Documents/EcoHW/Eco.Framework/Eco.InterfaceBus1/BuildFiles/Mac/arm64 x86_64/StaticRelease'",
 					"\"/Users/nikitakuritsyn/Documents/EcoHW/Eco.Framework/Eco.MemoryManager1/BuildFiles/Mac/arm64 x86_64/StaticRelease\"",
 					"'/Users/nikitakuritsyn/Documents/EcoHW/Eco.Framework/Eco.FileSystemManagement1/BuildFiles/Mac/arm64 x86_64/StaticRelease'",
-					"\"/Users/nikitakuritsyn/Documents/Eco.Lab1/BuildFiles/Mac/arm64 x86_64/Debug\"",
 					"\"/Users/nikitakuritsyn/Documents/EcoHW/001.InsideACOM/Lessons/Lesson02/Eco.CalculatorA/BuildFiles/Mac/arm64 x86_64/DynamicDebug\"",
 					"\"/Users/nikitakuritsyn/Documents/EcoHW/001.InsideACOM/Lessons/Lesson03/Eco.CalculatorB/BuildFiles/Mac/arm64 x86_64/StaticDebug\"",
 					"'/Users/nikitakuritsyn/Documents/EcoHW/001.InsideACOM/Lessons/Lesson05/Eco.CalculatorC/BuildFiles/Mac/arm64 x86_64/StaticRelease'",
 					"'/Users/nikitakuritsyn/Documents/EcoHW/001.InsideACOM/Lessons/Lesson06/Eco.CalculatorD/BuildFiles/Mac/arm64 x86_64/StaticRelease'",
 					"'/Users/nikitakuritsyn/Documents/EcoHW/001.InsideACOM/Lessons/Lesson07/Eco.CalculatorE/BuildFiles/Mac/arm64 x86_64/StaticRelease'",
-					"\"/Users/nikitakuritsyn/Documents/Eco.Lab2/BuildFiles/Mac/arm64 x86_64/Debug\"",
+					"\"/Users/nikitakuritsyn/Documents/projects/EcoHomeworkXcode/BuildFiles/Mac/arm64 x86_64/Debug\"",
+					"\"/Users/nikitakuritsyn/Documents/EcoHW/Eco.Framework/Eco.List1/BuildFiles/Mac/arm64 x86_64/StaticRelease\"",
 				);
 				OTHER_LDFLAGS = (
 					"-Xlinker",

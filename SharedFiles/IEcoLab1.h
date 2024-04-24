@@ -38,12 +38,9 @@ typedef struct IEcoLab1VTbl {
     uint32_t (ECOCALLMETHOD *AddRef)(/* in */ struct IEcoLab1* me);
     uint32_t (ECOCALLMETHOD *Release)(/* in */ struct IEcoLab1* me);
     /* IEcoLab1 */
-    int16_t (ECOCALLMETHOD *gnome_sort)(struct IEcoLab1* me, void* arr, size_t count, size_t size, int (*comp)(const void *, const void*));
-    int16_t (ECOCALLMETHOD *gnome_sort_opt)(struct IEcoLab1* me, void* arr, size_t count, size_t size, int (*comp)(const void*, const void*));
-    int32_t (ECOCALLMETHOD *Addition)(/* in */ struct CEcoLab1* me, /* in */ int16_t a, /* in */ int16_t b);
-    int16_t (ECOCALLMETHOD *Subtraction)(/* in */ struct CEcoLab1* me, /* in */ int16_t a, /* in */ int16_t b);
-    int32_t (ECOCALLMETHOD *Multiplication)(/* in */ struct CEcoLab1* me, /* in */ int16_t a, /* in */ int16_t b);
-    int16_t (ECOCALLMETHOD *Division)(/* in */ struct CEcoLab1* me, /* in */ int16_t a, /* in */ int16_t b);
+    int16_t (ECOCALLMETHOD *gnome_sort)(struct IEcoLab1* me, void* arr, size_t count, size_t size);
+    int16_t (ECOCALLMETHOD *gnome_sort_opt)(struct IEcoLab1* me, void* arr, size_t count, size_t size);
+
 
 } IEcoLab1VTbl, *IEcoLab1VTblPtr;
 

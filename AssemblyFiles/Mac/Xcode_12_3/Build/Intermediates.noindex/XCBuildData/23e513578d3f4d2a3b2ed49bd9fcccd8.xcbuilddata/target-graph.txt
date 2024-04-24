@@ -1,2 +1,0 @@
-Target dependency graph (1 target)
-Target 'Dynamic' in project 'Eco.Lab2' (no dependencies)

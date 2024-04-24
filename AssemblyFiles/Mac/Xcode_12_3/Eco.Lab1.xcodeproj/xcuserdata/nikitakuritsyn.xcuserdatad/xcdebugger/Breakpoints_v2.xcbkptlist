@@ -14,8 +14,8 @@
             filePath = "../../../SourceFiles/CEcoLab1.c"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "173"
-            endingLineNumber = "173"
+            startingLineNumber = "246"
+            endingLineNumber = "246"
             landmarkName = "CEcoLab1_gnome_sort(me, arr, count, size)"
             landmarkType = "9">
          </BreakpointContent>
@@ -23,16 +23,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "F39788EC-2761-4FAF-B524-EB5CDBE3726F"
-            shouldBeEnabled = "No"
+            uuid = "00AC7B4E-F679-45FD-B7F1-0559B030308B"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../../../SourceFiles/CEcoLab1.c"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "320"
-            endingLineNumber = "320"
-            landmarkName = "initCEcoLab1(me, pIUnkSystem)"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
+            landmarkName = "CEcoLab1_QueryInterface(me, riid, ppv)"
             landmarkType = "9">
          </BreakpointContent>
       </BreakpointProxy>
