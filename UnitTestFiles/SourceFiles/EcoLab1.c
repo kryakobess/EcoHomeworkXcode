@@ -31,6 +31,13 @@
 #include "IdEcoList1.h"
 
 
+void printArr(int* arr, size_t size) {
+    for (int i = 0; i < size; ++i) {
+        printf("%d ", arr[i]);
+    }
+    printf("\n");
+}
+
 /*
  *
  * <сводка>
@@ -152,9 +159,11 @@ int16_t EcoMain(IEcoUnknown* pIUnk) {
 
     printf("Example 1\n\n");
     
-    int arr[] = {54,2,55,6,5,5,1,12};
+    int arr[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
     
-    result = pIEcoLab1->pVTbl->gnome_sort(pIEcoLab1, arr, 8, sizeof(int));
+    result = pIEcoLab1->pVTbl->gnome_sort_opt(pIEcoLab1, arr, 10, sizeof(int));
+    
+    printArr(arr, 10);
     
     printf("Example 2\n\n");
     
@@ -162,7 +171,9 @@ int16_t EcoMain(IEcoUnknown* pIUnk) {
     
     result = pIEcoLab1->pVTbl->gnome_sort(pIEcoLab1, arr2, 10, sizeof(int));
     
+    printArr(arr, 10);
 
+    
     /* Освлбождение блока памяти */
     pIMem->pVTbl->Free(pIMem, name);
 

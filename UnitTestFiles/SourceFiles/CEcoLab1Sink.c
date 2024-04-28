@@ -115,7 +115,7 @@ int16_t ECOCALLMETHOD CEcoLab1Sink_OnSwap(/* in */ struct IEcoLab1Events* me, /*
         p_el1[i] = p_el2[i];
         p_el2[i] = buffer[i];
     }
-    
+    printf("\nSwap!");
     return 0;
 }
 

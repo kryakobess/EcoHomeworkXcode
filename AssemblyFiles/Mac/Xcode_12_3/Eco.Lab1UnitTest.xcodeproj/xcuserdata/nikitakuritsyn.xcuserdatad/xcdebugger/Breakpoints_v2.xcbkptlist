@@ -300,8 +300,8 @@
             filePath = "../../../UnitTestFiles/SourceFiles/EcoLab1.c"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "43"
-            endingLineNumber = "43"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
             landmarkName = "unknown"
             landmarkType = "0">
          </BreakpointContent>
@@ -332,8 +332,8 @@
             filePath = "../../../UnitTestFiles/SourceFiles/EcoLab1.c"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "80"
-            endingLineNumber = "80"
+            startingLineNumber = "87"
+            endingLineNumber = "87"
             landmarkName = "EcoMain(pIUnk)"
             landmarkType = "9">
          </BreakpointContent>
@@ -348,8 +348,8 @@
             filePath = "../../../UnitTestFiles/SourceFiles/EcoLab1.c"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "96"
-            endingLineNumber = "96"
+            startingLineNumber = "103"
+            endingLineNumber = "103"
             landmarkName = "EcoMain(pIUnk)"
             landmarkType = "9">
          </BreakpointContent>
@@ -364,8 +364,8 @@
             filePath = "../../../UnitTestFiles/SourceFiles/EcoLab1.c"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "119"
-            endingLineNumber = "119"
+            startingLineNumber = "126"
+            endingLineNumber = "126"
             landmarkName = "EcoMain(pIUnk)"
             landmarkType = "9">
             <Locations>
