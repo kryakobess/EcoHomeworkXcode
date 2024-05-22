@@ -111,10 +111,8 @@ uint32_t ECOCALLMETHOD CEcoLab1_Release(/* in */ struct IEcoLab1* me) {
     return pCMe->m_cRef;
 }
 
-void calculateTurnAroundTime(Process processes[], size_t size) {
-    for (size_t i = 0; i < size; i++) {
-        processes[i].turnAroundTime = processes[i].burstTime + processes[i].waitingTime;
-    }
+size_t getTurnAroundTime(const Process p) {
+    return p.burstTime + p.waitingTime;
 }
 
 size_t getWaitingTime(const Process p) {
@@ -166,6 +164,7 @@ void calculateCompletionAndWaitingTime(Process processes[], size_t size, IEcoLis
             shouldWaitForNextProcess = true;
             processes[shortestProcessId].completeTime = curTime;
             processes[shortestProcessId].waitingTime = getWaitingTime(processes[shortestProcessId]);
+            processes[shortestProcessId].turnAroundTime = getTurnAroundTime(processes[shortestProcessId]);
             completedProcessCount++;
         }
     }
@@ -201,25 +200,20 @@ void calculateCompletionAndWaitingTime_NonPreemptive(Process processes[], size_t
         curTime += processes[shortestProcessId].burstTime;
         processes[shortestProcessId].completeTime = curTime;
         processes[shortestProcessId].waitingTime = getWaitingTime(processes[shortestProcessId]);
+        processes[shortestProcessId].turnAroundTime = getTurnAroundTime(processes[shortestProcessId]);
         completedProcessCount++;
         seq->pVTbl->Add(seq, processes[shortestProcessId].pid);
     }
 }
 
-int16_t ECOCALLMETHOD CEcoLab1_sjf(struct IEcoLab1* me, Process processes[], size_t count, IEcoList1* processSequence) {
+int16_t ECOCALLMETHOD CEcoLab1_sjf(struct IEcoLab1* me, Process processes[], size_t count, IEcoList1* processSequence, bool preemptive) {
     CEcoLab1* pCMe = (CEcoLab1*)me;
-    
-    calculateCompletionAndWaitingTime(processes, count, processSequence);
-    calculateTurnAroundTime(processes, count);
-    
-    return 0;
-}
+    if (preemptive) {
+        calculateCompletionAndWaitingTime(processes, count, processSequence);
+    } else {
+        calculateCompletionAndWaitingTime_NonPreemptive(processes, count, processSequence);
 
-int16_t ECOCALLMETHOD CEcoLab1_sjfNonPreemptive(struct IEcoLab1* me, Process processes[], size_t count, IEcoList1* processSequence) {
-    CEcoLab1* pCMe = (CEcoLab1*)me;
-    
-    calculateCompletionAndWaitingTime_NonPreemptive(processes, count, processSequence);
-    calculateTurnAroundTime(processes, count);
+    }
     
     return 0;
 }
@@ -229,8 +223,7 @@ IEcoLab1VTbl g_x277FC00C35624096AFCFC125B94EEC90VTbl = {
     CEcoLab1_QueryInterface,
     CEcoLab1_AddRef,
     CEcoLab1_Release,
-    CEcoLab1_sjf,
-    CEcoLab1_sjfNonPreemptive
+    CEcoLab1_sjf
 };
 
 /*

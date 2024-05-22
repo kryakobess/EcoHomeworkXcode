@@ -135,10 +135,10 @@ int16_t EcoMain(IEcoUnknown* pIUnk) {
 
     result = pIBus->pVTbl->QueryComponent(pIBus, &CID_EcoList1, 0, &IID_IEcoList1, (void**) &seq);
     
-    Process arr[] = {{1, 7, 2}, {2, 2, 6}, {3, 8, 0}, {4,5,1}, {5,5,4}};
+    Process arr[] = {{1, 7, 2}, {2, 2, 6}, {3, 8, 0}, {4,5,1}, {5,5,4}, {6, 2, 22}};
     int count = sizeof(arr) / sizeof(Process);
     
-    pIEcoLab1->pVTbl->sjf(pIEcoLab1, arr, count, seq);
+    pIEcoLab1->pVTbl->sjf(pIEcoLab1, arr, count, seq, true);
     
     printf("\nPreemptive:\n");
     
@@ -147,8 +147,8 @@ int16_t EcoMain(IEcoUnknown* pIUnk) {
     printProcessesStatistic(arr, count);
     
     seq->pVTbl->Clear(seq);
-    Process arr2[] = {{1, 7, 2}, {2, 2, 6}, {3, 8, 0}, {4,5,1}, {5,5,4}};
-    pIEcoLab1->pVTbl->sjfNonPreemptive(pIEcoLab1, arr2, count, seq);
+    Process arr2[] = {{1, 7, 2}, {2, 2, 6}, {3, 8, 0}, {4,5,1}, {5,5,4}, {6, 2, 22}};
+    pIEcoLab1->pVTbl->sjf(pIEcoLab1, arr2, count, seq, false);
     
     printf("\nNon-preemptive:\n");
     
