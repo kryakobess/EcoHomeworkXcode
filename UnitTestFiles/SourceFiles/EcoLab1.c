@@ -43,6 +43,16 @@ void printProcessSeq(IEcoList1* list) {
     printf("\n");
 }
 
+void printProcessSeq_NonPreemptive(IEcoList1* list) {
+    int count = list->pVTbl->Count(list);
+    printf("Process: ");
+    for (int i = 0; i < count; ++i) {
+        size_t el = (size_t) list->pVTbl->Item(list, i);
+        printf("%3zu ->", el);
+    }
+    printf(" end\n");
+}
+
 void printProcessesStatistic(Process processes[], size_t count) {
     printf("pid\t\t burstTime\t\t arrivingTime\t\t turnAroundTime\t\t waitingTime\t\t completeTime\n");
     
@@ -125,14 +135,27 @@ int16_t EcoMain(IEcoUnknown* pIUnk) {
 
     result = pIBus->pVTbl->QueryComponent(pIBus, &CID_EcoList1, 0, &IID_IEcoList1, (void**) &seq);
     
-    Process arr[] = {{1, 7, 3}, {2, 2, 6}, {3, 8, 0}, {4,5,1}, {5,5,4}};
+    Process arr[] = {{1, 7, 2}, {2, 2, 6}, {3, 8, 0}, {4,5,1}, {5,5,4}};
     int count = sizeof(arr) / sizeof(Process);
     
-    pIEcoLab1->pVTbl->sjb(pIEcoLab1, arr, count, seq);
+    pIEcoLab1->pVTbl->sjf(pIEcoLab1, arr, count, seq);
+    
+    printf("\nPreemptive:\n");
     
     printProcessSeq(seq);
     
     printProcessesStatistic(arr, count);
+    
+    seq->pVTbl->Clear(seq);
+    Process arr2[] = {{1, 7, 2}, {2, 2, 6}, {3, 8, 0}, {4,5,1}, {5,5,4}};
+    pIEcoLab1->pVTbl->sjfNonPreemptive(pIEcoLab1, arr2, count, seq);
+    
+    printf("\nNon-preemptive:\n");
+    
+    printProcessSeq_NonPreemptive(seq);
+    
+    printProcessesStatistic(arr2, count);
+    
     
     /* Освлбождение блока памяти */
     pIMem->pVTbl->Free(pIMem, name);

@@ -40,7 +40,8 @@ typedef struct IEcoLab1VTbl {
     uint32_t (ECOCALLMETHOD *AddRef)(/* in */ struct IEcoLab1* me);
     uint32_t (ECOCALLMETHOD *Release)(/* in */ struct IEcoLab1* me);
     /* IEcoLab1 */
-    int16_t (ECOCALLMETHOD *sjb)(struct IEcoLab1* me, Process processes[], size_t count, /* out */ IEcoList1* processSequence);
+    int16_t (ECOCALLMETHOD *sjf)(struct IEcoLab1* me, Process processes[], size_t count, /* out */ IEcoList1* processSequence);
+    int16_t (ECOCALLMETHOD *sjfNonPreemptive)(struct IEcoLab1* me, Process processes[], size_t count, /* out */ IEcoList1* processSequence);
 
 
 } IEcoLab1VTbl, *IEcoLab1VTblPtr;

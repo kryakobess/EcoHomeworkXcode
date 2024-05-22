@@ -138,7 +138,9 @@ void calculateCompletionAndWaitingTime(Process processes[], size_t size, IEcoLis
     while (completedProcessCount < size) {
 
         for (size_t i = 0; i < size; ++i) {
-            bool isShortest = processes[i].arrivalTime <= curTime && remainingTime[i] > 0 && remainingTime[i] < shortestWaitingTime;
+            bool isShortest = processes[i].arrivalTime <= curTime 
+                    && remainingTime[i] > 0
+                    && remainingTime[i] < shortestWaitingTime;
             
             if (isShortest) {
                 shortestWaitingTime = remainingTime[i];
@@ -169,10 +171,54 @@ void calculateCompletionAndWaitingTime(Process processes[], size_t size, IEcoLis
     }
 }
 
+void calculateCompletionAndWaitingTime_NonPreemptive(Process processes[], size_t size, IEcoList1* seq) {
+    size_t completedProcessCount = 0;
+    size_t curTime = 0;
+    
+    while (completedProcessCount < size) {
+        size_t shortestWaitingTime = SIZE_T_MAX;
+        size_t shortestProcessId = 0;
+        bool shouldWaitForNextProcess = true;
+
+        for (size_t i = 0; i < size; ++i) {
+            bool isShortest = processes[i].arrivalTime <= curTime
+                                && processes[i].burstTime < shortestWaitingTime
+                                && processes[i].completeTime == 0;
+            
+            if (isShortest) {
+                shortestWaitingTime = processes[i].burstTime;
+                shortestProcessId = i;
+                shouldWaitForNextProcess = false;
+            }
+        }
+        
+        if (shouldWaitForNextProcess) {
+            seq->pVTbl->Add(seq, 0); //no process running
+            curTime++;
+            continue;
+        }
+        
+        curTime += processes[shortestProcessId].burstTime;
+        processes[shortestProcessId].completeTime = curTime;
+        processes[shortestProcessId].waitingTime = getWaitingTime(processes[shortestProcessId]);
+        completedProcessCount++;
+        seq->pVTbl->Add(seq, processes[shortestProcessId].pid);
+    }
+}
+
 int16_t ECOCALLMETHOD CEcoLab1_sjf(struct IEcoLab1* me, Process processes[], size_t count, IEcoList1* processSequence) {
     CEcoLab1* pCMe = (CEcoLab1*)me;
     
     calculateCompletionAndWaitingTime(processes, count, processSequence);
+    calculateTurnAroundTime(processes, count);
+    
+    return 0;
+}
+
+int16_t ECOCALLMETHOD CEcoLab1_sjfNonPreemptive(struct IEcoLab1* me, Process processes[], size_t count, IEcoList1* processSequence) {
+    CEcoLab1* pCMe = (CEcoLab1*)me;
+    
+    calculateCompletionAndWaitingTime_NonPreemptive(processes, count, processSequence);
     calculateTurnAroundTime(processes, count);
     
     return 0;
@@ -184,6 +230,7 @@ IEcoLab1VTbl g_x277FC00C35624096AFCFC125B94EEC90VTbl = {
     CEcoLab1_AddRef,
     CEcoLab1_Release,
     CEcoLab1_sjf,
+    CEcoLab1_sjfNonPreemptive
 };
 
 /*
