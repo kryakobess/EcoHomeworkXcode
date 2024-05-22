@@ -9,17 +9,14 @@ dependencies: \
   /Users/nikitakuritsyn/Documents/EcoHW/Eco.Framework/Eco.InterfaceBus1/SharedFiles/IEcoInterfaceBus1MemExt.h \
   /Users/nikitakuritsyn/Documents/projects/EcoHomeworkXcode/HeaderFiles/CEcoLab1.h \
   /Users/nikitakuritsyn/Documents/projects/EcoHomeworkXcode/SharedFiles/IEcoLab1.h \
-  /Users/nikitakuritsyn/Documents/projects/EcoHomeworkXcode/SharedFiles/IEcoLab1Events.h \
+  /Users/nikitakuritsyn/Documents/projects/EcoHomeworkXcode/HeaderFiles/Process.h \
+  /Users/nikitakuritsyn/Documents/EcoHW/Eco.Framework/Eco.List1/SharedFiles/IEcoList1.h \
+  ../../../SharedFiles/IEcoLab1Events.h \
   /Users/nikitakuritsyn/Documents/EcoHW/Eco.Framework/Eco.MemoryManager1/SharedFiles/IdEcoMemoryManager1.h \
   /Users/nikitakuritsyn/Documents/EcoHW/Eco.Framework/Eco.MemoryManager1/SharedFiles/IEcoMemoryManager1.h \
   /Users/nikitakuritsyn/Documents/EcoHW/Eco.Framework/Eco.MemoryManager1/SharedFiles/IEcoMemoryAllocator1.h \
-  /Users/nikitakuritsyn/Documents/projects/EcoHomeworkXcode/SharedFiles/IEcoConnectionPointContainer.h \
+  ../../../SharedFiles/IEcoConnectionPointContainer.h \
   ../../../SharedFiles/IEcoEnumConnectionPoints.h \
   ../../../SharedFiles/IEcoConnectionPoint.h \
   ../../../HeaderFiles/CEcoLab1ConnectionPoint.h \
-  /Users/nikitakuritsyn/Documents/projects/EcoHomeworkXcode/SharedFiles/IEcoConnectionPoint.h \
-  /Users/nikitakuritsyn/Documents/EcoHW/Eco.Framework/Eco.List1/SharedFiles/IdEcoList1.h \
-  /Users/nikitakuritsyn/Documents/EcoHW/Eco.Framework/Eco.List1/SharedFiles/IEcoList1.h \
-  /Users/nikitakuritsyn/Documents/projects/EcoHomeworkXcode/HeaderFiles/CEcoLab1EnumConnectionPoints.h \
-  /Users/nikitakuritsyn/Documents/projects/EcoHomeworkXcode/SharedFiles/IEcoEnumConnectionPoints.h \
-  /Users/nikitakuritsyn/Documents/projects/EcoHomeworkXcode/SharedFiles/IEcoEnumConnections.h
+  /Users/nikitakuritsyn/Documents/EcoHW/Eco.Framework/Eco.List1/SharedFiles/IdEcoList1.h

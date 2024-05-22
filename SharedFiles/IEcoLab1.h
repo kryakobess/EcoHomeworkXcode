@@ -25,6 +25,8 @@
 #define __I_ECOLAB1_H__
 
 #include "IEcoBase1.h"
+#include "Process.h"
+#include "IEcoList1.h"
 
 /* IEcoLab1 IID = {277FC00C-3562-4096-AFCF-C125B94EEC90} */
 #ifndef __IID_IEcoLab1
@@ -38,8 +40,7 @@ typedef struct IEcoLab1VTbl {
     uint32_t (ECOCALLMETHOD *AddRef)(/* in */ struct IEcoLab1* me);
     uint32_t (ECOCALLMETHOD *Release)(/* in */ struct IEcoLab1* me);
     /* IEcoLab1 */
-    int16_t (ECOCALLMETHOD *gnome_sort)(struct IEcoLab1* me, void* arr, size_t count, size_t size);
-    int16_t (ECOCALLMETHOD *gnome_sort_opt)(struct IEcoLab1* me, void* arr, size_t count, size_t size);
+    int16_t (ECOCALLMETHOD *sjb)(struct IEcoLab1* me, Process processes[], size_t count, /* out */ IEcoList1* processSequence);
 
 
 } IEcoLab1VTbl, *IEcoLab1VTblPtr;

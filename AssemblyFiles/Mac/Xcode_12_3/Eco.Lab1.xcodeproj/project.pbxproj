@@ -19,28 +19,8 @@
 		01138AE827F1BE4900734060 /* CEcoLab1.c in Sources */ = {isa = PBXBuildFile; fileRef = 01138AE527F1BE4900734060 /* CEcoLab1.c */; };
 		01138AE927F1BE4900734060 /* CEcoLab1Factory.c in Sources */ = {isa = PBXBuildFile; fileRef = 01138AE627F1BE4900734060 /* CEcoLab1Factory.c */; };
 		01138AEA27F1BE4900734060 /* CEcoLab1Factory.c in Sources */ = {isa = PBXBuildFile; fileRef = 01138AE627F1BE4900734060 /* CEcoLab1Factory.c */; };
-		FDC905642BD50C500013610B /* CEcoLab1ConnectionPoint.h in Headers */ = {isa = PBXBuildFile; fileRef = FDC905612BD50C500013610B /* CEcoLab1ConnectionPoint.h */; };
-		FDC905652BD50C500013610B /* CEcoLab1ConnectionPoint.h in Headers */ = {isa = PBXBuildFile; fileRef = FDC905612BD50C500013610B /* CEcoLab1ConnectionPoint.h */; };
-		FDC905662BD50C500013610B /* CEcoLab1EnumConnections.h in Headers */ = {isa = PBXBuildFile; fileRef = FDC905622BD50C500013610B /* CEcoLab1EnumConnections.h */; };
-		FDC905672BD50C500013610B /* CEcoLab1EnumConnections.h in Headers */ = {isa = PBXBuildFile; fileRef = FDC905622BD50C500013610B /* CEcoLab1EnumConnections.h */; };
-		FDC905682BD50C500013610B /* CEcoLab1EnumConnectionPoints.h in Headers */ = {isa = PBXBuildFile; fileRef = FDC905632BD50C500013610B /* CEcoLab1EnumConnectionPoints.h */; };
-		FDC905692BD50C500013610B /* CEcoLab1EnumConnectionPoints.h in Headers */ = {isa = PBXBuildFile; fileRef = FDC905632BD50C500013610B /* CEcoLab1EnumConnectionPoints.h */; };
-		FDC9056F2BD50C6D0013610B /* IEcoConnectionPoint.h in Headers */ = {isa = PBXBuildFile; fileRef = FDC9056A2BD50C6D0013610B /* IEcoConnectionPoint.h */; };
-		FDC905702BD50C6D0013610B /* IEcoConnectionPoint.h in Headers */ = {isa = PBXBuildFile; fileRef = FDC9056A2BD50C6D0013610B /* IEcoConnectionPoint.h */; };
-		FDC905712BD50C6D0013610B /* IEcoEnumConnections.h in Headers */ = {isa = PBXBuildFile; fileRef = FDC9056B2BD50C6D0013610B /* IEcoEnumConnections.h */; };
-		FDC905722BD50C6D0013610B /* IEcoEnumConnections.h in Headers */ = {isa = PBXBuildFile; fileRef = FDC9056B2BD50C6D0013610B /* IEcoEnumConnections.h */; };
-		FDC905732BD50C6D0013610B /* IEcoEnumConnectionPoints.h in Headers */ = {isa = PBXBuildFile; fileRef = FDC9056C2BD50C6D0013610B /* IEcoEnumConnectionPoints.h */; };
-		FDC905742BD50C6D0013610B /* IEcoEnumConnectionPoints.h in Headers */ = {isa = PBXBuildFile; fileRef = FDC9056C2BD50C6D0013610B /* IEcoEnumConnectionPoints.h */; };
-		FDC905752BD50C6D0013610B /* IEcoLab1Events.h in Headers */ = {isa = PBXBuildFile; fileRef = FDC9056D2BD50C6D0013610B /* IEcoLab1Events.h */; };
-		FDC905762BD50C6D0013610B /* IEcoLab1Events.h in Headers */ = {isa = PBXBuildFile; fileRef = FDC9056D2BD50C6D0013610B /* IEcoLab1Events.h */; };
-		FDC905772BD50C6D0013610B /* IEcoConnectionPointContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = FDC9056E2BD50C6D0013610B /* IEcoConnectionPointContainer.h */; };
-		FDC905782BD50C6D0013610B /* IEcoConnectionPointContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = FDC9056E2BD50C6D0013610B /* IEcoConnectionPointContainer.h */; };
-		FDC9057C2BD50C800013610B /* CEcoLab1EnumConnectionPoints.c in Sources */ = {isa = PBXBuildFile; fileRef = FDC905792BD50C800013610B /* CEcoLab1EnumConnectionPoints.c */; };
-		FDC9057D2BD50C800013610B /* CEcoLab1EnumConnectionPoints.c in Sources */ = {isa = PBXBuildFile; fileRef = FDC905792BD50C800013610B /* CEcoLab1EnumConnectionPoints.c */; };
-		FDC9057E2BD50C800013610B /* CEcoLab1EnumConnections.c in Sources */ = {isa = PBXBuildFile; fileRef = FDC9057A2BD50C800013610B /* CEcoLab1EnumConnections.c */; };
-		FDC9057F2BD50C800013610B /* CEcoLab1EnumConnections.c in Sources */ = {isa = PBXBuildFile; fileRef = FDC9057A2BD50C800013610B /* CEcoLab1EnumConnections.c */; };
-		FDC905802BD50C800013610B /* CEcoLab1ConnectionPoint.c in Sources */ = {isa = PBXBuildFile; fileRef = FDC9057B2BD50C800013610B /* CEcoLab1ConnectionPoint.c */; };
-		FDC905812BD50C800013610B /* CEcoLab1ConnectionPoint.c in Sources */ = {isa = PBXBuildFile; fileRef = FDC9057B2BD50C800013610B /* CEcoLab1ConnectionPoint.c */; };
+		FD9726D02BFCF94E00483ABF /* Process.h in Headers */ = {isa = PBXBuildFile; fileRef = FD9726CF2BFCF94E00483ABF /* Process.h */; };
+		FD9726D12BFCF94E00483ABF /* Process.h in Headers */ = {isa = PBXBuildFile; fileRef = FD9726CF2BFCF94E00483ABF /* Process.h */; };
 		FDC9058C2BD6D6F60013610B /* lib1F5DF16EE1BF43B999A434ED38FE8F3A.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 01138AC027F1BDA600734060 /* lib1F5DF16EE1BF43B999A434ED38FE8F3A.a */; };
 /* End PBXBuildFile section */
 
@@ -53,17 +33,7 @@
 		01138ADE27F1BE2C00734060 /* IdEcoLab1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IdEcoLab1.h; path = ../../../SharedFiles/IdEcoLab1.h; sourceTree = "<group>"; };
 		01138AE527F1BE4900734060 /* CEcoLab1.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = CEcoLab1.c; path = ../../../SourceFiles/CEcoLab1.c; sourceTree = "<group>"; };
 		01138AE627F1BE4900734060 /* CEcoLab1Factory.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = CEcoLab1Factory.c; path = ../../../SourceFiles/CEcoLab1Factory.c; sourceTree = "<group>"; };
-		FDC905612BD50C500013610B /* CEcoLab1ConnectionPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CEcoLab1ConnectionPoint.h; path = ../../../HeaderFiles/CEcoLab1ConnectionPoint.h; sourceTree = "<group>"; };
-		FDC905622BD50C500013610B /* CEcoLab1EnumConnections.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CEcoLab1EnumConnections.h; path = ../../../HeaderFiles/CEcoLab1EnumConnections.h; sourceTree = "<group>"; };
-		FDC905632BD50C500013610B /* CEcoLab1EnumConnectionPoints.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CEcoLab1EnumConnectionPoints.h; path = ../../../HeaderFiles/CEcoLab1EnumConnectionPoints.h; sourceTree = "<group>"; };
-		FDC9056A2BD50C6D0013610B /* IEcoConnectionPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IEcoConnectionPoint.h; path = ../../../SharedFiles/IEcoConnectionPoint.h; sourceTree = "<group>"; };
-		FDC9056B2BD50C6D0013610B /* IEcoEnumConnections.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IEcoEnumConnections.h; path = ../../../SharedFiles/IEcoEnumConnections.h; sourceTree = "<group>"; };
-		FDC9056C2BD50C6D0013610B /* IEcoEnumConnectionPoints.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IEcoEnumConnectionPoints.h; path = ../../../SharedFiles/IEcoEnumConnectionPoints.h; sourceTree = "<group>"; };
-		FDC9056D2BD50C6D0013610B /* IEcoLab1Events.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IEcoLab1Events.h; path = ../../../SharedFiles/IEcoLab1Events.h; sourceTree = "<group>"; };
-		FDC9056E2BD50C6D0013610B /* IEcoConnectionPointContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IEcoConnectionPointContainer.h; path = ../../../SharedFiles/IEcoConnectionPointContainer.h; sourceTree = "<group>"; };
-		FDC905792BD50C800013610B /* CEcoLab1EnumConnectionPoints.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = CEcoLab1EnumConnectionPoints.c; path = ../../../SourceFiles/CEcoLab1EnumConnectionPoints.c; sourceTree = "<group>"; };
-		FDC9057A2BD50C800013610B /* CEcoLab1EnumConnections.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = CEcoLab1EnumConnections.c; path = ../../../SourceFiles/CEcoLab1EnumConnections.c; sourceTree = "<group>"; };
-		FDC9057B2BD50C800013610B /* CEcoLab1ConnectionPoint.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = CEcoLab1ConnectionPoint.c; path = ../../../SourceFiles/CEcoLab1ConnectionPoint.c; sourceTree = "<group>"; };
+		FD9726CF2BFCF94E00483ABF /* Process.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Process.h; path = ../../../HeaderFiles/Process.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,9 +78,6 @@
 		01138AD227F1BDE700734060 /* Source Files */ = {
 			isa = PBXGroup;
 			children = (
-				FDC9057B2BD50C800013610B /* CEcoLab1ConnectionPoint.c */,
-				FDC905792BD50C800013610B /* CEcoLab1EnumConnectionPoints.c */,
-				FDC9057A2BD50C800013610B /* CEcoLab1EnumConnections.c */,
 				01138AE527F1BE4900734060 /* CEcoLab1.c */,
 				01138AE627F1BE4900734060 /* CEcoLab1Factory.c */,
 			);
@@ -120,11 +87,6 @@
 		01138AD327F1BDF100734060 /* Shared Files */ = {
 			isa = PBXGroup;
 			children = (
-				FDC9056A2BD50C6D0013610B /* IEcoConnectionPoint.h */,
-				FDC9056E2BD50C6D0013610B /* IEcoConnectionPointContainer.h */,
-				FDC9056C2BD50C6D0013610B /* IEcoEnumConnectionPoints.h */,
-				FDC9056B2BD50C6D0013610B /* IEcoEnumConnections.h */,
-				FDC9056D2BD50C6D0013610B /* IEcoLab1Events.h */,
 				01138ADE27F1BE2C00734060 /* IdEcoLab1.h */,
 				01138ADD27F1BE2C00734060 /* IEcoLab1.h */,
 			);
@@ -134,11 +96,9 @@
 		01138AD427F1BDFB00734060 /* Header Files */ = {
 			isa = PBXGroup;
 			children = (
-				FDC905612BD50C500013610B /* CEcoLab1ConnectionPoint.h */,
-				FDC905632BD50C500013610B /* CEcoLab1EnumConnectionPoints.h */,
-				FDC905622BD50C500013610B /* CEcoLab1EnumConnections.h */,
 				01138AD627F1BE1A00734060 /* CEcoLab1.h */,
 				01138AD527F1BE1A00734060 /* CEcoLab1Factory.h */,
+				FD9726CF2BFCF94E00483ABF /* Process.h */,
 			);
 			name = "Header Files";
 			sourceTree = "<group>";
@@ -157,18 +117,11 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD9726D02BFCF94E00483ABF /* Process.h in Headers */,
 				01138AE127F1BE2C00734060 /* IdEcoLab1.h in Headers */,
-				FDC905772BD50C6D0013610B /* IEcoConnectionPointContainer.h in Headers */,
-				FDC905682BD50C500013610B /* CEcoLab1EnumConnectionPoints.h in Headers */,
-				FDC905752BD50C6D0013610B /* IEcoLab1Events.h in Headers */,
 				01138AD727F1BE1A00734060 /* CEcoLab1Factory.h in Headers */,
 				01138ADF27F1BE2C00734060 /* IEcoLab1.h in Headers */,
-				FDC905732BD50C6D0013610B /* IEcoEnumConnectionPoints.h in Headers */,
-				FDC905662BD50C500013610B /* CEcoLab1EnumConnections.h in Headers */,
-				FDC9056F2BD50C6D0013610B /* IEcoConnectionPoint.h in Headers */,
-				FDC905642BD50C500013610B /* CEcoLab1ConnectionPoint.h in Headers */,
 				01138AD927F1BE1A00734060 /* CEcoLab1.h in Headers */,
-				FDC905712BD50C6D0013610B /* IEcoEnumConnections.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,18 +129,11 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD9726D12BFCF94E00483ABF /* Process.h in Headers */,
 				01138AE227F1BE2C00734060 /* IdEcoLab1.h in Headers */,
-				FDC905782BD50C6D0013610B /* IEcoConnectionPointContainer.h in Headers */,
-				FDC905692BD50C500013610B /* CEcoLab1EnumConnectionPoints.h in Headers */,
-				FDC905762BD50C6D0013610B /* IEcoLab1Events.h in Headers */,
 				01138AD827F1BE1A00734060 /* CEcoLab1Factory.h in Headers */,
 				01138AE027F1BE2C00734060 /* IEcoLab1.h in Headers */,
-				FDC905742BD50C6D0013610B /* IEcoEnumConnectionPoints.h in Headers */,
-				FDC905672BD50C500013610B /* CEcoLab1EnumConnections.h in Headers */,
-				FDC905702BD50C6D0013610B /* IEcoConnectionPoint.h in Headers */,
-				FDC905652BD50C500013610B /* CEcoLab1ConnectionPoint.h in Headers */,
 				01138ADA27F1BE1A00734060 /* CEcoLab1.h in Headers */,
-				FDC905722BD50C6D0013610B /* IEcoEnumConnections.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,11 +216,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FDC9057E2BD50C800013610B /* CEcoLab1EnumConnections.c in Sources */,
 				01138AE727F1BE4900734060 /* CEcoLab1.c in Sources */,
 				01138AE927F1BE4900734060 /* CEcoLab1Factory.c in Sources */,
-				FDC905802BD50C800013610B /* CEcoLab1ConnectionPoint.c in Sources */,
-				FDC9057C2BD50C800013610B /* CEcoLab1EnumConnectionPoints.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,11 +225,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FDC9057F2BD50C800013610B /* CEcoLab1EnumConnections.c in Sources */,
 				01138AE827F1BE4900734060 /* CEcoLab1.c in Sources */,
 				01138AEA27F1BE4900734060 /* CEcoLab1Factory.c in Sources */,
-				FDC905812BD50C800013610B /* CEcoLab1ConnectionPoint.c in Sources */,
-				FDC9057D2BD50C800013610B /* CEcoLab1EnumConnectionPoints.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -25,17 +25,31 @@
 #include "IdEcoFileSystemManagement1.h"
 #include "IdEcoLab1.h"
 #include "IEcoLab1.h"
-#include "IEcoConnectionPointContainer.h"
-#include "IEcoLab1Events.h"
-#include "CEcoLab1Sink.h"
 #include "IdEcoList1.h"
 
 
-void printArr(int* arr, size_t size) {
-    for (int i = 0; i < size; ++i) {
-        printf("%d ", arr[i]);
+void printProcessSeq(IEcoList1* list) {
+    int count = list->pVTbl->Count(list);
+    printf("Time:    ");
+    for (int i = 0; i < count; ++i) {
+        printf("%3d ", i+1);
     }
     printf("\n");
+    printf("Process: ");
+    for (int i = 0; i < count; ++i) {
+        size_t el = (size_t) list->pVTbl->Item(list, i);
+        printf("%3zu ", el);
+    }
+    printf("\n");
+}
+
+void printProcessesStatistic(Process processes[], size_t count) {
+    printf("pid\t\t burstTime\t\t arrivingTime\t\t turnAroundTime\t\t waitingTime\t\t completeTime\n");
+    
+    for (size_t i = 0; i < count; ++i) {
+        Process p = processes[i];
+        printf("%zu\t\t\t\t %zu\t\t\t\t %zu\t\t\t\t %zu\t\t\t\t\t\t %zu\t\t\t\t %zu\n", p.pid, p.burstTime, p.arrivalTime, p.turnAroundTime, p.waitingTime, p.completeTime);
+    }
 }
 
 /*
@@ -57,17 +71,11 @@ int16_t EcoMain(IEcoUnknown* pIUnk) {
     IEcoInterfaceBus1* pIBus = 0;
     /* Указатель на интерфейс работы с памятью */
     IEcoMemoryAllocator1* pIMem = 0;
+    IEcoList1* seq = 0;
     char_t* name = 0;
     char_t* copyName = 0;
     /* Указатель на тестируемый интерфейс */
     IEcoLab1* pIEcoLab1 = 0;
-    /* Указатель на интерфейс контейнера точек подключения */
-    IEcoConnectionPointContainer* pICPC = 0;
-    /* Указатель на интерфейс точки подключения */
-    IEcoConnectionPoint* pICP = 0;
-    /* Указатель на обратный интерфейс */
-    IEcoLab1Events* pIEcoLab1Sink = 0;
-    IEcoUnknown* pISinkUnk = 0;
     uint32_t cAdvise = 0;
 
     /* Проверка и создание системного интрефейса */
@@ -108,13 +116,6 @@ int16_t EcoMain(IEcoUnknown* pIUnk) {
         goto Release;
     }
 
-    /* Выделение блока памяти */
-    name = (char_t *)pIMem->pVTbl->Alloc(pIMem, 10);
-
-    /* Заполнение блока памяти */
-    pIMem->pVTbl->Fill(pIMem, name, 'a', 9);
-
-
     /* Получение тестируемого интерфейса */
     result = pIBus->pVTbl->QueryComponent(pIBus, &CID_EcoLab1, 0, &IID_IEcoLab1, (void**) &pIEcoLab1);
     if (result != 0 || pIEcoLab1 == 0) {
@@ -122,68 +123,19 @@ int16_t EcoMain(IEcoUnknown* pIUnk) {
         goto Release;
     }
 
-    /* Проверка поддержки подключений обратного интерфейса */
-    result = pIEcoLab1->pVTbl->QueryInterface(pIEcoLab1, &IID_IEcoConnectionPointContainer, (void **)&pICPC);
-    if (result != 0 || pICPC == 0) {
-        /* Освобождение интерфейсов в случае ошибки */
-        goto Release;
-    }
-
-    /* Запрос на получения интерфейса точки подключения */
-    result = pICPC->pVTbl->FindConnectionPoint(pICPC, &IID_IEcoLab1Events, &pICP);
-    if (result != 0 || pICP == 0) {
-        /* Освобождение интерфейсов в случае ошибки */
-        goto Release;
-    }
-    /* Освобождение интерфейса */
-    pICPC->pVTbl->Release(pICPC);
-
-    /* Создание экземпляра обратного интерфейса */
-    result = createCEcoLab1Sink(pIMem, (IEcoLab1Events**)&pIEcoLab1Sink);
-
-    if (pIEcoLab1Sink != 0) {
-        result = pIEcoLab1Sink->pVTbl->QueryInterface(pIEcoLab1Sink, &IID_IEcoUnknown,(void **)&pISinkUnk);
-        if (result != 0 || pISinkUnk == 0) {
-            /* Освобождение интерфейсов в случае ошибки */
-            goto Release;
-        }
-        /* Подключение */
-        result = pICP->pVTbl->Advise(pICP, pISinkUnk, &cAdvise);
-        /* Проверка */
-        if (result == 0 && cAdvise == 1) {
-            /* Сюда можно добавить код */
-        }
-        /* Освобождение интерфейса */
-        pISinkUnk->pVTbl->Release(pISinkUnk);
-    }
-
-    printf("Example 1\n\n");
+    result = pIBus->pVTbl->QueryComponent(pIBus, &CID_EcoList1, 0, &IID_IEcoList1, (void**) &seq);
     
-    int arr[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+    Process arr[] = {{1, 7, 3}, {2, 2, 6}, {3, 8, 0}, {4,5,1}, {5,5,4}};
+    int count = sizeof(arr) / sizeof(Process);
     
-    result = pIEcoLab1->pVTbl->gnome_sort_opt(pIEcoLab1, arr, 10, sizeof(int));
+    pIEcoLab1->pVTbl->sjb(pIEcoLab1, arr, count, seq);
     
-    printArr(arr, 10);
+    printProcessSeq(seq);
     
-    printf("Example 2\n\n");
-    
-    int arr2[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
-    
-    result = pIEcoLab1->pVTbl->gnome_sort(pIEcoLab1, arr2, 10, sizeof(int));
-    
-    printArr(arr, 10);
-
+    printProcessesStatistic(arr, count);
     
     /* Освлбождение блока памяти */
     pIMem->pVTbl->Free(pIMem, name);
-
-    
-    if (pIEcoLab1Sink != 0) {
-        /* Отключение */
-        result = pICP->pVTbl->Unadvise(pICP, cAdvise);
-        pIEcoLab1Sink->pVTbl->Release(pIEcoLab1Sink);
-        pICP->pVTbl->Release(pICP);
-    }
 
 Release:
 

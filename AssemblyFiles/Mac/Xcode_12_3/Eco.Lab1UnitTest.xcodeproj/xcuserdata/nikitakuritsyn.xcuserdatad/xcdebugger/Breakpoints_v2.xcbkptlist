@@ -23,22 +23,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "627FBAEC-5BF9-4EFC-A06D-DA32039FD348"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "../../../SourceFiles/CEcoLab1.c"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "159"
-            endingLineNumber = "159"
-            landmarkName = "CEcoLab1_Fire_OnContinueLog(me, i, isForward)"
-            landmarkType = "9">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "5562F625-268B-443B-A391-A3588632CA7D"
             shouldBeEnabled = "No"
             ignoreCount = "0"
@@ -62,10 +46,10 @@
             filePath = "../../../SourceFiles/CEcoLab1.c"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "189"
-            endingLineNumber = "189"
-            landmarkName = "CEcoLab1_Fire_OnCompare(me, arr, leftI, rightI, size)"
-            landmarkType = "9">
+            startingLineNumber = "190"
+            endingLineNumber = "190"
+            landmarkName = "unknown"
+            landmarkType = "0">
             <Locations>
                <Location
                   uuid = "408B239B-0E29-4C8A-946E-CF8BDEAABE45 - 2119b315350b7e0d"
@@ -140,9 +124,9 @@
             filePath = "../../../SourceFiles/CEcoLab1.c"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "296"
-            endingLineNumber = "296"
-            landmarkName = "CEcoLab1_IEcoConnectionPointContainer_QueryInterface(me, riid, ppv)"
+            startingLineNumber = "297"
+            endingLineNumber = "297"
+            landmarkName = "createCEcoLab1(pIUnkSystem, pIUnkOuter, ppIEcoLab1)"
             landmarkType = "9">
          </BreakpointContent>
       </BreakpointProxy>
@@ -156,9 +140,9 @@
             filePath = "../../../SourceFiles/CEcoLab1.c"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "297"
-            endingLineNumber = "297"
-            landmarkName = "CEcoLab1_IEcoConnectionPointContainer_QueryInterface(me, riid, ppv)"
+            startingLineNumber = "298"
+            endingLineNumber = "298"
+            landmarkName = "createCEcoLab1(pIUnkSystem, pIUnkOuter, ppIEcoLab1)"
             landmarkType = "9">
             <Locations>
                <Location
@@ -204,9 +188,9 @@
             filePath = "../../../SourceFiles/CEcoLab1.c"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "242"
-            endingLineNumber = "242"
-            landmarkName = "CEcoLab1_gnome_sort(me, arr, count, size)"
+            startingLineNumber = "243"
+            endingLineNumber = "243"
+            landmarkName = "createCEcoLab1(pIUnkSystem, pIUnkOuter, ppIEcoLab1)"
             landmarkType = "9">
          </BreakpointContent>
       </BreakpointProxy>
@@ -220,8 +204,8 @@
             filePath = "../../../SourceFiles/CEcoLab1.c"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "241"
-            endingLineNumber = "241"
+            startingLineNumber = "242"
+            endingLineNumber = "242"
             landmarkName = "unknown"
             landmarkType = "0">
          </BreakpointContent>
@@ -236,9 +220,9 @@
             filePath = "../../../SourceFiles/CEcoLab1.c"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "243"
-            endingLineNumber = "243"
-            landmarkName = "CEcoLab1_gnome_sort(me, arr, count, size)"
+            startingLineNumber = "244"
+            endingLineNumber = "244"
+            landmarkName = "createCEcoLab1(pIUnkSystem, pIUnkOuter, ppIEcoLab1)"
             landmarkType = "9">
             <Locations>
                <Location
@@ -300,8 +284,8 @@
             filePath = "../../../UnitTestFiles/SourceFiles/EcoLab1.c"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "50"
-            endingLineNumber = "50"
+            startingLineNumber = "64"
+            endingLineNumber = "64"
             landmarkName = "unknown"
             landmarkType = "0">
          </BreakpointContent>
@@ -316,10 +300,10 @@
             filePath = "../../../SourceFiles/CEcoLab1.c"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "275"
-            endingLineNumber = "275"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            startingLineNumber = "276"
+            endingLineNumber = "276"
+            landmarkName = "createCEcoLab1(pIUnkSystem, pIUnkOuter, ppIEcoLab1)"
+            landmarkType = "9">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -332,8 +316,8 @@
             filePath = "../../../UnitTestFiles/SourceFiles/EcoLab1.c"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "87"
-            endingLineNumber = "87"
+            startingLineNumber = "95"
+            endingLineNumber = "95"
             landmarkName = "EcoMain(pIUnk)"
             landmarkType = "9">
          </BreakpointContent>
@@ -348,73 +332,10 @@
             filePath = "../../../UnitTestFiles/SourceFiles/EcoLab1.c"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "103"
-            endingLineNumber = "103"
+            startingLineNumber = "111"
+            endingLineNumber = "111"
             landmarkName = "EcoMain(pIUnk)"
             landmarkType = "9">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "B43C54EA-1572-41EF-A2ED-A41CEB148F01"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "../../../UnitTestFiles/SourceFiles/EcoLab1.c"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "126"
-            endingLineNumber = "126"
-            landmarkName = "EcoMain(pIUnk)"
-            landmarkType = "9">
-            <Locations>
-               <Location
-                  uuid = "B43C54EA-1572-41EF-A2ED-A41CEB148F01 - ffef7ee92a1c5ee1"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "EcoMain"
-                  moduleName = "Eco.Lab1UnitTest"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/nikitakuritsyn/Documents/projects/EcoHomeworkXcode/UnitTestFiles/SourceFiles/EcoLab1.c"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "128"
-                  endingLineNumber = "128"
-                  offsetFromSymbolStart = "648">
-               </Location>
-               <Location
-                  uuid = "B43C54EA-1572-41EF-A2ED-A41CEB148F01 - ffef7ee92a1c5ee1"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "EcoMain"
-                  moduleName = "Eco.Lab1UnitTest"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/nikitakuritsyn/Documents/projects/EcoHomeworkXcode/UnitTestFiles/SourceFiles/EcoLab1.c"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "128"
-                  endingLineNumber = "128"
-                  offsetFromSymbolStart = "604">
-               </Location>
-               <Location
-                  uuid = "B43C54EA-1572-41EF-A2ED-A41CEB148F01 - ffef7ee92a1c5818"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "EcoMain"
-                  moduleName = "Eco.Lab1UnitTest"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/nikitakuritsyn/Documents/projects/EcoHomeworkXcode/UnitTestFiles/SourceFiles/EcoLab1.c"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "119"
-                  endingLineNumber = "119"
-                  offsetFromSymbolStart = "648">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -511,6 +432,118 @@
             endingLineNumber = "151"
             landmarkName = "unknown"
             landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6BEA3BA0-91E6-4C32-A2FB-DC596D432A2A"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../../UnitTestFiles/SourceFiles/EcoLab1.c"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "131"
+            endingLineNumber = "131"
+            landmarkName = "EcoMain(pIUnk)"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  uuid = "6BEA3BA0-91E6-4C32-A2FB-DC596D432A2A - ffef7ee92a1c5818"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "EcoMain"
+                  moduleName = "Eco.Lab1UnitTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nikitakuritsyn/Documents/projects/EcoHomeworkXcode/UnitTestFiles/SourceFiles/EcoLab1.c"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "119"
+                  endingLineNumber = "119"
+                  offsetFromSymbolStart = "680">
+               </Location>
+               <Location
+                  uuid = "6BEA3BA0-91E6-4C32-A2FB-DC596D432A2A - ffef7ee92a1c58bf"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "EcoMain"
+                  moduleName = "Eco.Lab1UnitTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nikitakuritsyn/Documents/projects/EcoHomeworkXcode/UnitTestFiles/SourceFiles/EcoLab1.c"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "114"
+                  endingLineNumber = "114"
+                  offsetFromSymbolStart = "664">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "82BAF17E-A0A2-406D-A343-E9570D9026FF"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../../SourceFiles/CEcoLab1.c"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "143"
+            endingLineNumber = "143"
+            landmarkName = "calculateCompletionAndWaitingTime(processes, size)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EADFC83A-F786-47D3-A29B-583A335D8EAB"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../../SourceFiles/CEcoLab1.c"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "150"
+            endingLineNumber = "150"
+            landmarkName = "calculateCompletionAndWaitingTime(processes, size)"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  uuid = "EADFC83A-F786-47D3-A29B-583A335D8EAB - cf2b10e5dbb1baa4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "calculateCompletionAndWaitingTime"
+                  moduleName = "Eco.Lab1UnitTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nikitakuritsyn/Documents/projects/EcoHomeworkXcode/SourceFiles/CEcoLab1.c"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "151"
+                  endingLineNumber = "151"
+                  offsetFromSymbolStart = "452">
+               </Location>
+               <Location
+                  uuid = "EADFC83A-F786-47D3-A29B-583A335D8EAB - cf2b10e5dbb1ba85"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "calculateCompletionAndWaitingTime"
+                  moduleName = "Eco.Lab1UnitTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nikitakuritsyn/Documents/projects/EcoHomeworkXcode/SourceFiles/CEcoLab1.c"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "150"
+                  endingLineNumber = "150"
+                  offsetFromSymbolStart = "476">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
